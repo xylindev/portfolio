@@ -28,7 +28,6 @@ body {
 
 section {
     height: calc(100vh - 100px);
-    width: 2560px;
 }
 
 a {
@@ -59,6 +58,6 @@ button.darkMode {
     box-shadow: 5px 5px var(--text-color-dark);
 }
 
-i.darkMode {
+main i.darkMode {
     color: var(--text-color-dark);
 }
