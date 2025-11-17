@@ -44,3 +44,21 @@ a {
     background-color: var(--primary-bg-color-dark);
     color: var(--text-color-dark);
 }
+
+header.darkMode {
+    background-color: var(--nav-bg-color-dark);
+    border-color: var(--text-color-dark);
+}
+
+button.darkMode {
+    color: var(--text-color-dark);
+    border-color: var(--text-color-dark);
+}
+
+.button button.darkMode:hover {
+    box-shadow: 5px 5px var(--text-color-dark);
+}
+
+i.darkMode {
+    color: var(--text-color-dark);
+}
