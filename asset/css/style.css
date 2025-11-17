@@ -1,0 +1,31 @@
+@font-face {
+    font-family: Poppins;
+    src: url('../font/Poppins.ttf');
+}
+
+:root {
+    --primary-bg-color-light: #F3F4FE;
+    --primary-bg-color-dark: #131213;
+    --text-color-light: #322F47;
+    --text-color-dark: #FCFDFD;
+    --home-text-color: #ED3C57;
+    --nav-bg-color-light: #FCFAFE;
+    --nav-bg-color-dark: #1E1C1E;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+body {
+    background-color: var(--primary-bg-color-light);
+    color: var(--text-color-light);
+}
+
+.darkMode {
+    background-color: var(--primary-bg-color-dark);
+    color: var(--text-color-dark);
+}
