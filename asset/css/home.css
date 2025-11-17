@@ -1,0 +1,68 @@
+@import url('style.css');
+
+.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home .right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 45%;
+}
+
+.network {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-size: 4em;
+    margin-left: 25px;
+}
+
+.network i {
+    text-decoration: none;
+    color: var(--text-color-light);
+}
+
+.home .left {
+    width: 50%;
+}
+
+.left .name {
+    font-size: 4em;
+    font-weight: 600;
+}
+
+.left .name span {
+    color: var(--home-text-color);
+}
+
+.left .job {
+    font-size: 2.3em;
+    font-weight: 500;
+}
+
+.button {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.button button {
+    background-color: transparent;
+    font-size: 1.5em;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--text-color-light);
+}
+
+.button button:hover {
+    box-shadow: 5px 5px var(--text-color-light);
+}

@@ -23,6 +23,17 @@
 body {
     background-color: var(--primary-bg-color-light);
     color: var(--text-color-light);
+    overflow: hidden;
+}
+
+section {
+    height: calc(100vh - 100px);
+    width: 2560px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color-light);
 }
 
 .hidden {
