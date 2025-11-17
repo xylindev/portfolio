@@ -25,6 +25,10 @@ body {
     color: var(--text-color-light);
 }
 
+.hidden {
+    display: none;
+}
+
 .darkMode {
     background-color: var(--primary-bg-color-dark);
     color: var(--text-color-dark);
