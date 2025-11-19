@@ -39,6 +39,10 @@ a {
     display: none;
 }
 
+.show {
+    display: flex !important;
+}
+
 .darkMode {
     background-color: var(--primary-bg-color-dark);
     color: var(--text-color-dark);
@@ -60,4 +64,8 @@ button.darkMode {
 
 main i.darkMode {
     color: var(--text-color-dark);
+}
+
+nav ul.darkMode {
+    background-color: rgba(30,28,30,0.8) !important;
 }

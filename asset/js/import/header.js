@@ -9,6 +9,61 @@ const headers = document.querySelectorAll('header')
 const buttons = document.querySelectorAll('button')
 const icons = document.querySelectorAll('main i')
 const homeButton = document.querySelector('.button')
+const navList = document.querySelectorAll('nav ul')
+
+const menuIcons = document.querySelectorAll('.menu-icon')
+
+// -----------------------------------------------------------------------------------------
+
+let switchTheme = () => {
+    const allElement = [
+        body, 
+        ...headers, 
+        ...buttons, 
+        ...icons, 
+        ...navList,
+        homeButton
+    ]
+    
+    allElement.forEach(value => {
+        value.classList.toggle('darkMode')
+    })
+}
+
+let showNavMobile = () => {
+    navList[0].classList.toggle('show')
+    navList[1].classList.toggle('show')
+}
+
+let syncThemeIcon = (i, condition) => {
+    const sun = 'bi-sun-fill'
+    const moon = 'bi-moon-fill'
+
+    if(condition){
+        themes[i].classList.add(moon)
+        themes[i].classList.remove(sun)
+    } else {
+        themes[i].classList.add(sun)
+        themes[i].classList.remove(moon)
+    }
+}
+
+let syncNavIcon = () => {
+    const list = 'bi-list'
+    const cross = 'bi-x'
+
+    menuIcons.forEach(icon => {
+        if(navList[0].classList.contains('show')){
+            icon.classList.add(cross)
+            icon.classList.remove(list)
+        } else {
+            icon.classList.add(list)
+            icon.classList.remove(cross)
+        }
+    })
+}
+
+// -----------------------------------------------------------------------------------------
 
 let switchLanguage = () => {
     flags[0].addEventListener('click', () => {
@@ -22,56 +77,29 @@ let switchLanguage = () => {
     })
 }
 
-let switchTheme = () => {
-    const allElement = [
-        body, 
-        ...headers, 
-        ...buttons, 
-        ...icons, 
-        homeButton
-    ]
-
-    allElement.forEach(value => {
-        value.classList.toggle('darkMode')
-    })
-}
-
 let applyTheme = () => {
-    const sun = 'bi-sun-fill'
-    const moon = 'bi-moon-fill'
-
-    function syncIcon(i, isDarkMode){
-        if(isDarkMode){
-            themes[i].classList.add(moon)
-            themes[i].classList.remove(sun)
-        } else {
-            themes[i].classList.add(sun)
-            themes[i].classList.remove(moon)
-        }
-    }
-
-    themes[0].addEventListener('click', () => {
-        if(themes[0].classList.toggle(sun)){
-            themes[0].classList.remove(moon)
-        } else {
-            themes[0].classList.add(moon)
-        }
-        switchTheme()
-        syncIcon(1, body.classList.contains('darkMode'))
-    })
-
-    themes[1].addEventListener('click', () => {
-        if(themes[1].classList.toggle(sun)){
-            themes[1].classList.remove(moon)
-        } else {
-            themes[1].classList.add(moon)
-        }
-        switchTheme()
-        syncIcon(0, body.classList.contains('darkMode'))
+    themes.forEach(theme => {
+        theme.addEventListener('click', () => {
+            switchTheme()
+            syncThemeIcon(0, body.classList.contains('darkMode'))
+            syncThemeIcon(1, body.classList.contains('darkMode'))
+        })
     })
 }
+
+let navMenu = () => {
+    menuIcons.forEach(icon => {
+        icon.addEventListener('click', () => {
+            showNavMobile()
+            syncNavIcon()
+        })
+    })
+}
+
+// -----------------------------------------------------------------------------------------
 
 export let header = () => {
     switchLanguage()
     applyTheme()
+    navMenu()
 }

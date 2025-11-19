@@ -64,32 +64,5 @@
 }
 
 .button button:hover {
-    box-shadow: 5px 5px var(--text-color-light);
-}
-
-/* Responsive 1080p Desktop */
-@media screen and (max-width : 2200px) {
-    .right img {
-        width: 85%;
-    }
-
-    .button {
-        margin-top: 25px;
-    }
-
-    .button button {
-        font-size: 1.2em;
-    }
-
-    .left .name {
-        font-size: 3em;
-    }
-
-    .left .job {
-        font-size: 1.9em;
-    }
-
-    .network {
-        font-size: 3.5em;
-    }
+    box-shadow: 10px 10px var(--text-color-light);
 }

@@ -40,17 +40,42 @@ nav ul li:first-child {
     color: var(--home-text-color);
 }
 
-/* Responsive 1080p Desktop */
-@media screen and (max-width : 2200px) {
-    header h1 {
-        font-size: 1.7em;
-    }
-    
-    nav ul li {
-        font-size: 1em;
+.menu-icon {
+    display: none;
+}
+
+/* Responsive Mobile */
+@media screen and (max-width : 600px) {
+    .home * {display: none;}
+
+    header {
+        height: 50px;
+        padding: 10px;
     }
 
-    nav li:nth-child(7), nav li:nth-child(8) {
-        font-size: 1.4em;
+    header h1 {
+        font-size: 1em;
+    }
+    
+    nav ul{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        height: calc(100vh - 50px);
+        background-color: rgba(252, 250, 254, 0.8);
+        width: 100vw;
+        transform: translate(-54.7%, .15%);
+        font-size: .8em;
+        justify-content: space-around;
+    }
+
+    #en nav ul {
+        transform: translate(-60.35%, .15%);
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 2em;
+        text-align: end;
     }
 }
