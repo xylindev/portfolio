@@ -35,17 +35,19 @@ let showNavMobile = () => {
     navList[1].classList.toggle('show')
 }
 
-let syncThemeIcon = (i, condition) => {
+let syncThemeIcon = () => {
     const sun = 'bi-sun-fill'
     const moon = 'bi-moon-fill'
 
-    if(condition){
-        themes[i].classList.add(moon)
-        themes[i].classList.remove(sun)
-    } else {
-        themes[i].classList.add(sun)
-        themes[i].classList.remove(moon)
-    }
+    themes.forEach(theme => {
+        if(body.classList.contains('darkMode')){
+            theme.classList.add(moon)
+            theme.classList.remove(sun)
+        } else {
+            theme.classList.add(sun)
+            theme.classList.remove(moon)
+        }
+    })
 }
 
 let syncNavIcon = () => {
@@ -81,8 +83,7 @@ let applyTheme = () => {
     themes.forEach(theme => {
         theme.addEventListener('click', () => {
             switchTheme()
-            syncThemeIcon(0, body.classList.contains('darkMode'))
-            syncThemeIcon(1, body.classList.contains('darkMode'))
+            syncThemeIcon()
         })
     })
 }
