@@ -67,5 +67,12 @@ main i.darkMode {
 }
 
 nav ul.darkMode {
-    background-color: rgba(30,28,30,0.8) !important;
+    background-color: rgba(30,28,30,0.95) !important;
+}
+
+/* Responsive Mobile */
+@media screen and (max-width : 600px){
+    section {
+        height: calc(100vh - 50px);
+    }
 }
