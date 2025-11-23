@@ -89,7 +89,6 @@
     .network {
         flex-direction: row;
         margin: 0;
-        font-size: 2em;
         justify-content: space-around;
         width: 60%;
         margin-top: 20px;
@@ -100,14 +99,12 @@
     }
 
     .left .name {
-        font-size: 6.5vmin;
         text-align: center;
         margin-bottom: 10px;
     }
 
     .left .job {
         text-align: justify;
-        font-size: 4.5vmin;
     }
 
     .button {
@@ -117,7 +114,6 @@
     }
 
     .button button {
-        font-size: .7em;
         padding: 15px;
     }
 }
