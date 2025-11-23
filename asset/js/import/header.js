@@ -15,7 +15,7 @@ const menuIcons = document.querySelectorAll('.menu-icon')
 
 // -----------------------------------------------------------------------------------------
 
-let switchTheme = () => {
+let themeToggle = () => {
     const allElement = [
         body, 
         ...headers, 
@@ -30,44 +30,33 @@ let switchTheme = () => {
     })
 }
 
-let showNavMobile = () => {
-    navList[0].classList.toggle('show')
-    navList[1].classList.toggle('show')
-}
-
-let syncThemeIcon = () => {
-    const sun = 'bi-sun-fill'
-    const moon = 'bi-moon-fill'
-
-    themes.forEach(theme => {
-        if(body.classList.contains('darkMode')){
-            theme.classList.add(moon)
-            theme.classList.remove(sun)
+let syncElement = (items, elements, condition) => {
+    elements.forEach(element => {
+        if(condition){
+            element.classList.add(items[0])
+            element.classList.remove(items[1])
         } else {
-            theme.classList.add(sun)
-            theme.classList.remove(moon)
+            element.classList.add(items[1])
+            element.classList.remove(items[0])
         }
     })
 }
 
-let syncNavIcon = () => {
-    const list = 'bi-list'
-    const cross = 'bi-x'
+let getSections = () => {
+    let sections = []
+    let sectionsName = document.querySelectorAll('.section-name')
+    let allSections = document.querySelectorAll('section')
 
-    menuIcons.forEach(icon => {
-        if(navList[0].classList.contains('show')){
-            icon.classList.add(cross)
-            icon.classList.remove(list)
-        } else {
-            icon.classList.add(list)
-            icon.classList.remove(cross)
-        }
-    })
+    for(let i=0; i<sectionsName.length/2; i++){
+        sections.push([[sectionsName[i], sectionsName[i+6]], [allSections[i], allSections[i+6]]])
+    }
+
+    return sections
 }
 
 // -----------------------------------------------------------------------------------------
 
-let switchLanguage = () => {
+let languageToggle = () => {
     flags[0].addEventListener('click', () => {
         fr.classList.add('hidden')
         en.classList.remove('hidden')
@@ -80,27 +69,72 @@ let switchLanguage = () => {
 }
 
 let applyTheme = () => {
+    const moon = 'bi-moon-fill'
+    const sun = 'bi-sun-fill'
+
     themes.forEach(theme => {
         theme.addEventListener('click', () => {
-            switchTheme()
-            syncThemeIcon()
+            themeToggle()
+            syncElement([moon, sun], themes, body.classList.contains('darkMode'))
         })
     })
 }
 
 let navMenu = () => {
+    const cross = 'bi-x'
+    const list = 'bi-list'
+
+    function showNavMobile(){
+        navList[0].classList.toggle('show')
+        navList[1].classList.toggle('show')
+    }
+
     menuIcons.forEach(icon => {
         icon.addEventListener('click', () => {
             showNavMobile()
-            syncNavIcon()
+            syncElement([cross, list], menuIcons, navList[0].classList.contains('show'))
         })
     })
+}
+
+let sectionToggle = () => {
+    let elements = new Map(getSections())
+    let currentSections = document.querySelectorAll('.home')
+    
+    function syncSection(values, currentSections, condition){
+        values.forEach(value => {
+            if(condition){
+                value.classList.remove('hidden')
+                currentSections.forEach(section => {
+                    section.classList.add('hidden')
+                })
+            }
+        })
+    }
+
+    function isHidden(values){
+        let isHidden = false
+        values.forEach(value => {
+            isHidden = value.classList.contains('hidden')
+        })
+        return isHidden
+    }
+
+    for(const [keys, values] of elements){
+        keys.forEach(key => {
+            key.addEventListener('click', () => {
+                syncSection(values, currentSections, isHidden(values))
+                currentSections = values
+            })
+        })
+    }
 }
 
 // -----------------------------------------------------------------------------------------
 
 export let header = () => {
-    switchLanguage()
+    languageToggle()
     applyTheme()
     navMenu()
+    sectionToggle()
 }
