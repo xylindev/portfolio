@@ -73,6 +73,6 @@ nav ul.darkMode {
 /* Responsive Mobile */
 @media screen and (max-width : 600px){
     section {
-        height: calc(100vh - 50px);
+        height: calc(100vh - 5vmax);
     }
 }

@@ -45,14 +45,14 @@ nav ul li:first-child {
 }
 
 /* Responsive Mobile */
-@media screen and (max-width : 600px) {
+@media screen and (max-width : 1500px) {
     header {
-        height: 50px;
+        height: 5vmax;
         padding: 10px;
     }
 
     header h1 {
-        font-size: 1em;
+        font-size: 2vmax;
     }
     
     nav ul{
@@ -63,7 +63,7 @@ nav ul li:first-child {
         background-color: rgba(252, 250, 254, 0.95);
         width: 100vw;
         transform: translate(-54.7%, .15%);
-        font-size: .8em;
+        font-size: 1.5vmax;
         justify-content: space-around;
     }
 
@@ -73,7 +73,7 @@ nav ul li:first-child {
 
     .menu-icon {
         display: block;
-        font-size: 2em;
+        font-size: 3.5vmax;
         text-align: end;
     }
 }
