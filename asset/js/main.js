@@ -1,6 +1,6 @@
-import { header } from "./import/header.js";
+import { header } from "./header/header.js";
 
-let main = () => {
+const main = () => {
     header()
 }
 
