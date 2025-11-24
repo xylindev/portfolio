@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-size: 4vmax;
+    font-size: 3.5vmax;
     margin-left: 25px;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .home .left {
-    width: 50%;
+    width: 45%;
 }
 
 .left .name {
@@ -39,16 +39,16 @@
 }
 
 .left .job {
-    font-size: 1.7vmax;
+    font-size: 1.5vmax;
     font-weight: 500;
+    text-align: justify;
 }
 
 .button {
-    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 45px;
 }
 
 .button button {
@@ -58,14 +58,7 @@
     text-align: center;
     cursor: pointer;
     color: var(--text-color-light);
-}
-
-#fr .button button {
-    font-size: 1.1vmax;
-}
-
-#en .button button {
-    font-size: 1.3vmax;
+    font-size: 2vmin;
 }
 
 .button button:hover {
@@ -76,22 +69,20 @@
 @media screen and (max-width : 600px) {
     .home {
         flex-direction: column-reverse;
-        justify-content: start;
         justify-content: center;
     }
 
     .home .right {
         flex-direction: column;
         width: 90%;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 
     .network {
         flex-direction: row;
-        margin: 0;
+        margin: 20px 0 0 0;
         justify-content: space-around;
         width: 60%;
-        margin-top: 20px;
     }
 
     .home .left {
@@ -100,11 +91,11 @@
 
     .left .name {
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     .left .job {
-        text-align: justify;
+        font-size: 1em;
     }
 
     .button {
@@ -114,6 +105,7 @@
     }
 
     .button button {
-        padding: 15px;
+        padding: 10px;
+        font-size: .7em;
     }
 }
