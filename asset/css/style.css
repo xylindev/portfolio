@@ -71,7 +71,7 @@ nav ul.darkMode {
 }
 
 /* Responsive Mobile */
-@media screen and (max-width : 600px){
+@media screen and (max-width : 1700px){
     section {
         height: calc(100vh - 6vmax);
     }

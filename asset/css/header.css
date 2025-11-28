@@ -40,6 +40,10 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
     display: none;
 }
 
+.menu-icon::before{
+    cursor: pointer;
+}
+
 @media screen and (max-width : 1700px) {
     header {
         height: 6vmax;
@@ -57,12 +61,16 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
         height: calc(100vh - 6vmax);
         background-color: rgba(252, 250, 254, 0.95);
         width: 100vw;
-        transform: translate(-54.7%, .5%);
+        transform: translate(-54.8%, .3%);
         justify-content: space-around;
     }
 
     nav ul li{
         font-size: 2.5vmax;
+    }
+
+    nav li i, nav li span{
+        font-size: 3.5vmax;
     }
 
     .menu-icon {
