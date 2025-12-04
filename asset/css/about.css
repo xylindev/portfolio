@@ -1,0 +1,59 @@
+@import url(style.css);
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-visual {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .description {
+    width: 45%;
+    height: 100%;
+}
+
+.about-visual .container-img {
+    width: 80%;
+    aspect-ratio: 1/1;
+    border: 5px solid var(--text-color-light);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about-visual .rotate {
+    width: 20%;
+    height: 100%;
+    background-color: var(--home-text-color);
+    position: relative;
+    z-index: -1;
+    animation: rotate 3s linear 0s infinite normal none;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.about-visual .img {
+    border: 5px solid var(--text-color-light);
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.about-visual .img img {
+    width: 100%;
+    object-position: 50% 50%;
+}
