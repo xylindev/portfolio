@@ -35,6 +35,18 @@ a {
     color: var(--text-color-light);
 }
 
+button {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--text-color-light);
+    font-size: 1vmax;
+}
+
+button:hover { box-shadow: 10px 10px var(--text-color-light); }
+
 .hidden {
     display: none;
 }
@@ -43,9 +55,17 @@ a {
     display: flex;
 }
 
-/* Responsive Mobile */
-@media screen and (max-width : 1700px){
+/* Responsive */
+@media screen and (max-width : 1500px){
     section {
         height: calc(100vh - 6vmax);
+    }
+}
+
+/* Mobile Responsive */ 
+@media screen and (max-width : 600px) {
+    button {
+        padding: 10px;
+        font-size: 10px;
     }
 }

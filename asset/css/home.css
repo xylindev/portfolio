@@ -50,18 +50,6 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 45px;
-
-        button {
-            background-color: transparent;
-            padding: 20px;
-            border-radius: 15px;
-            text-align: center;
-            cursor: pointer;
-            color: var(--text-color-light);
-            font-size: 2vmin;
-        }
-
-        button:hover { box-shadow: 10px 10px var(--text-color-light); }
     }
 }
 
@@ -107,11 +95,6 @@
 
         .button {
             margin-top: 25px;
-
-            button {
-                padding: 10px;
-                font-size: .9em;
-            }
         }
     }
 }

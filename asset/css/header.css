@@ -33,7 +33,7 @@ nav ul {
     li:nth-child(1), li:nth-child(2) { color: var(--home-text-color); }
 }
 
-@media screen and (max-width : 1700px) {
+@media screen and (max-width : 1500px) {
     header {
         height: 6vmax;
         padding: 10px;
@@ -47,8 +47,9 @@ nav ul {
         height: calc(100vh - 6vmax);
         background-color: rgba(252, 250, 254, 0.95);
         width: 100vw;
-        transform: translate(-54.8%, .3%);
+        transform: translate(-54.555%, .35%);
         justify-content: space-around;
+        z-index: 1;
 
         li{ 
             font-size: 2.5vmax;
