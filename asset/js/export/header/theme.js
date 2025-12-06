@@ -1,9 +1,7 @@
 const body = document.querySelector('body')
-const headers = document.querySelector('header')
-const buttons = document.querySelectorAll('button')
-const icons = document.querySelectorAll('main i')
-const homeButton = document.querySelector('.button')
-const navList = document.querySelector('nav ul')
+const header = document.querySelector('header')
+const home = document.querySelectorAll('.home')
+const about = document.querySelectorAll('.about')
 
 const themeIcon = document.querySelector('.theme-icon')
 
@@ -13,12 +11,10 @@ export const applyTheme = () => {
 
     function themeToggle() {
         const elements = [
-            body, 
-            headers, 
-            navList,
-            homeButton,
-            ...buttons,
-            ...icons,
+            body,
+            header,
+            ...home,
+            ...about
         ]
 
         elements.forEach(value => {

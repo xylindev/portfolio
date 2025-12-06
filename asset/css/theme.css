@@ -1,0 +1,38 @@
+@import url(style.css);
+
+.darkMode {
+    background-color: var(--primary-bg-color-dark);
+    color: var(--text-color-dark);
+    border-color: var(--text-color-dark);
+
+    i { color: var(--text-color-dark); }
+}
+
+header.darkMode {
+    background-color: var(--nav-bg-color-dark);
+
+    ul { background-color: rgba(30,28,30,0.95); }
+}
+
+.home.darkMode {
+    .button button { 
+        color: var(--text-color-dark); 
+        border-color: var(--text-color-dark);
+    }
+
+    .button button:hover { box-shadow: 5px 5px var(--text-color-dark); }
+}
+
+.about.darkMode .container-img {
+    border-color: var(--text-color-dark); 
+
+    .rotate {
+        border-color: var(--text-color-dark); 
+    }
+
+    .img {
+        background-color: var(--primary-bg-color-dark);
+        border-color: var(--text-color-dark);
+        img { filter: none; }
+    }
+}
