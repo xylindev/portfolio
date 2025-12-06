@@ -4,65 +4,65 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 45%;
+    }
+
+    .left {
+        width: 45%;
+    }   
 }
 
-.home .right {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 45%;
+.right {
+    .network {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 3.5vmax;
+    }
+
+    img {
+        width: 85%;
+        margin-right: 25px;
+    }
 }
 
-.network {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-size: 3.5vmax;
-    margin-left: 25px;
-}
 
-.right img {
-    width: 85%;
-}
+.left {
+    .name {
+        font-size: 3vmax;
+        font-weight: 600;
+        span { color: var(--home-text-color); }
+    }
 
-.home .left {
-    width: 45%;
-}
+    .job {
+        font-size: 1.5vmax;
+        font-weight: 500;
+        text-align: justify;
+    }
 
-.left .name {
-    font-size: 3vmax;
-    font-weight: 600;
-}
+    .button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 45px;
 
-.left .name span {
-    color: var(--home-text-color);
-}
+        button {
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            cursor: pointer;
+            color: var(--text-color-light);
+            font-size: 2vmin;
+        }
 
-.left .job {
-    font-size: 1.5vmax;
-    font-weight: 500;
-    text-align: justify;
-}
-
-.button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 45px;
-}
-
-.button button {
-    background-color: transparent;
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    cursor: pointer;
-    color: var(--text-color-light);
-    font-size: 2vmin;
-}
-
-.button button:hover {
-    box-shadow: 10px 10px var(--text-color-light);
+        button:hover { box-shadow: 10px 10px var(--text-color-light); }
+    }
 }
 
 /* Responsive Mobile */
@@ -70,42 +70,44 @@
     .home {
         flex-direction: column-reverse;
         justify-content: center;
+
+        .right {
+            flex-direction: column;
+            width: 90%;
+            margin-bottom: 15px;
+        }
+
+        .left {
+            width: 90%;
+        }
     }
 
-    .home .right {
-        flex-direction: column;
-        width: 90%;
-        margin-bottom: 15px;
-    }
-
-    .network {
+    .right .network {
         flex-direction: row;
         margin: 20px 0 0 0;
         justify-content: space-around;
         width: 60%;
     }
 
-    .home .left {
-        width: 90%;
-    }
+    .left {
+        .name {
+            text-align: center;
+            margin-bottom: 5px;
+        }
 
-    .left .name {
-        text-align: center;
-        margin-bottom: 5px;
-    }
+        .job {
+            font-size: 1em;
+        }
 
-    .left .job {
-        font-size: 1em;
-    }
+        .button {
+            width: 100%;
+            margin-top: 25px;
+            justify-content: space-around;
 
-    .button {
-        width: 100%;
-        margin-top: 25px;
-        justify-content: space-around;
-    }
-
-    .button button {
-        padding: 10px;
-        font-size: .7em;
+            button {
+                padding: 10px;
+                font-size: .7em;
+            }
+        }
     }
 }
