@@ -1,5 +1,5 @@
-import { buttonClick } from "./homeButton.js"
+import { homeButtonsClick } from "./buttons.js"
 
 export const home = () => {
-    buttonClick()
+    homeButtonsClick()
 }

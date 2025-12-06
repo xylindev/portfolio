@@ -6,7 +6,7 @@
     align-items: center;
 
     .about-visual {
-        width: 50%;
+        width: 45%;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -20,7 +20,7 @@
 }
 
 .about-visual .container-img {
-    width: 80%;
+    width: 70%;
     aspect-ratio: 1/1;
     border: 5px solid var(--text-color-light);
     border-radius: 50%;
@@ -41,7 +41,7 @@
 
     .img {
         border: 5px solid var(--text-color-light);
-        width: 30%;
+        width: 25%;
         aspect-ratio: 1/1;
         border-radius: 50%;
         overflow: hidden;
@@ -60,4 +60,12 @@
 @keyframes rotate {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
+}
+
+/* Responsive Mobile */
+@media screen and (max-width : 600px) {
+    .about {
+        position: relative;
+        z-index: -1;
+    }
 }
