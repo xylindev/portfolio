@@ -34,3 +34,18 @@ header.darkMode {
         img { filter: none; }
     }
 }
+
+.contact.darkMode {
+    .thanks ul { border-color: var(--text-color-dark) };
+
+    form {
+        h2, input, textarea { 
+            border-color:  var(--text-color-dark); 
+            color: var(--text-color-dark);
+        }
+
+        input::placeholder, textarea::placeholder { color: var(--text-color-dark); }
+
+        button:hover { box-shadow: none; }
+    }
+}

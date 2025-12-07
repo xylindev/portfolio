@@ -2,6 +2,7 @@ const body = document.querySelector('body')
 const header = document.querySelector('header')
 const home = document.querySelectorAll('.home')
 const about = document.querySelectorAll('.about')
+const contact = document.querySelectorAll('.contact')
 
 const themeIcon = document.querySelector('.theme-icon')
 
@@ -14,7 +15,8 @@ export const applyTheme = () => {
             body,
             header,
             ...home,
-            ...about
+            ...about,
+            ...contact
         ]
 
         elements.forEach(value => {
