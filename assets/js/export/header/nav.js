@@ -6,10 +6,10 @@ const navList = document.querySelector('nav ul')
 const sections = document.querySelectorAll('section')
 const navItems = document.querySelectorAll('.nav-item')
 
-export const menuToggle = () => {
-    const cross = 'bi-x'
-    const list = 'bi-list'
+const cross = 'bi-x'
+const list = 'bi-list'
 
+export const menuToggle = () => {
     menuIcon.addEventListener('click', () => {
         if(menuIcon.classList.toggle(list)){
             menuIcon.classList.remove(cross)
@@ -33,6 +33,11 @@ export const sectionToogle = () => {
             value.classList.toggle('hidden')
             Utils.currentSection.classList.toggle('hidden')
             Utils.currentSection = value
+
+            if(!menuIcon.classList.toggle(cross)){
+                menuIcon.classList.add(list)
+                navList.classList.toggle('show')
+            }
         })
     }
 }
