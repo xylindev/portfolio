@@ -2,6 +2,9 @@ import { Utils } from "../utils/utils.js"
 
 const flagIcon = document.querySelector('.flag-icon')
 
+const enFlag = 'flag-icon-gb'
+const frFlag = 'flag-icon-fr'
+
 const applyLanguage = () => {
     const sectionClass = Utils.currentSection.classList[0]
     const items = [
@@ -15,7 +18,7 @@ const applyLanguage = () => {
         item.classList.toggle('hidden')
     })
 
-    if(Utils.currentLanguage == 'en'){
+    if(localStorage.getItem('language') === 'en'){
         Utils.currentSection = document.querySelector(`.${sectionClass}.en`)
         Utils.currentSection.classList.toggle('hidden')
     } else {
@@ -26,14 +29,21 @@ const applyLanguage = () => {
 
 export const languageToggle = () => {
     flagIcon.addEventListener('click', () => {
-        if(flagIcon.classList.toggle('flag-icon-fr')){
-            flagIcon.classList.remove('flag-icon-gb')
-            Utils.currentLanguage = 'fr'
+        if(flagIcon.classList.toggle(frFlag)){
+            flagIcon.classList.remove(enFlag)
+            localStorage.setItem('language', 'fr')
         } else {
-            flagIcon.classList.add('flag-icon-gb')
-            Utils.currentLanguage = 'en'
+            flagIcon.classList.add(enFlag)
+            localStorage.setItem('language', 'en')
         }
-
         applyLanguage()
     })
+}
+
+export const loadLanguage = () => {
+    if(localStorage.getItem('language') === 'en'){
+        applyLanguage()
+        flagIcon.classList.remove(frFlag)
+        flagIcon.classList.add(enFlag)
+    }
 }
