@@ -1,0 +1,28 @@
+@import url(style.css);
+
+.darkMode * {
+    background-color: var(--primary-bg-color-dark);
+    color: var(--text-color-dark);
+    border-color: var(--text-color-dark);
+
+    button:hover {
+        box-shadow: 10px 10px var(--text-color-dark);
+    }
+
+    .about .container-img {
+        border-color: var(--text-color-dark);
+
+        .rotate{ border-color: var(--text-color-dark); }
+        .img{ border-color: var(--text-color-dark); }
+        .img img { filter: none; }
+    }
+
+    .contact ul { border-color: var(--text-color-dark); }
+
+    .contact form {
+        input::placeholder, textarea::placeholder { color: var(--text-color-dark); }
+        button { box-shadow: none; }
+    }
+}
+
+
