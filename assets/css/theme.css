@@ -1,5 +1,3 @@
-@import url(style.css);
-
 .darkMode * {
     background-color: var(--primary-bg-color-dark);
     color: var(--text-color-dark);
@@ -22,6 +20,11 @@
     .contact form {
         input::placeholder, textarea::placeholder { color: var(--text-color-dark); }
         button { box-shadow: none; }
+    }
+
+    .education .education-content {
+        div { border-color: var(--text-color-dark); }
+        i { color: var(--text-color-dark); }
     }
 }
 
