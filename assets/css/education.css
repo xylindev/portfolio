@@ -38,6 +38,11 @@
                 color : var(--text-color-light); 
                 font-size: 1.5rem;
             }
+
+            i::before {
+                vertical-align: baseline;
+                margin-left: 10px;
+            }
         }
     }
 
