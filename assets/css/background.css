@@ -1,0 +1,10 @@
+[alt="panoramic"] {
+    height: 100vh;
+    filter: blur(3px);
+    animation: panorama 60s ease-in alternate infinite;
+}
+
+@keyframes panorama {
+    from { transform: translateX(0%); }
+    to { transform: translateX(-45%); }
+}
