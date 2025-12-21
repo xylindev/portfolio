@@ -1,26 +1,23 @@
-# **Présentation du Portfolio**
+# Portfolio - Minecraft Bedrock UI
 
-## **Un Projet Qui M’accompagnera Toute Ma Carrière**
+Ce projet reprend l'esthétique de l'interface **Minecraft Bedrock** pour présenter mes compétences et mes réalisations. 
+Il est conçu pour être une base solide et évolutive qui m'accompagnera tout au long de ma carrière.
 
-Ce portfolio est un projet central dans mon parcours de développeur. Je l’ai conçu pour qu’il puisse évoluer avec moi au fil des années. Pour cela, j’ai appliqué au mieux les principes **SOLID**, afin de garantir une base de code propre, modulaire et facilement adaptable si de nouveaux besoins apparaissent.
+## 🛠 Conception & Philosophie
 
-## **Un Portfolio Bilingue : Français & Anglais**
+* **Architecture SOLID :** Le code est structuré pour être propre, modulaire et facile à maintenir sur le long terme.
+* **100% "Hand-Coded" :** À une époque dominée par l'IA, j'ai fait le choix de tout coder moi-même en m'appuyant uniquement sur la documentation officielle (MDN). L'historique des commits témoigne de mon processus de réflexion et de refactoring.
+* **Bilingue (i18n) :** Interface entièrement disponible en **Français** et **Anglais** pour une portée internationale.
 
-Afin d’élargir mes horizons et de présenter mon travail à un public plus international, j’ai décidé de créer mon portfolio en **deux langues** : le français et l’anglais.
-C’est aussi une manière de renforcer mes compétences en communication technique multilingue.
+## 🚀 Fonctionnalités
 
-## **Une Navigation Pensée Pour le Confort**
+* Navigation immersive style "Jeu Vidéo".
+* Système de changement de langue dynamique.
+* *Autres fonctionnalités à venir...*
 
-Le portfolio comporte plusieurs sections et intégrera différentes fonctionnalités destinées à rendre la consultation fluide et agréable.
-Les fonctionnalités seront détaillées une fois le projet entièrement finalisé, afin d’en donner une vision complète et précise.
+---
 
-## **Un Projet 100 % Personnel**
-
-Dans une époque où l’IA domine de plus en plus, j’ai choisi de développer ce portfolio **intégralement par moi-même**, sans aucune aide extérieure autre que la documentation officielle (comme MDN).
-En parcourant l’historique des commits, vous pourrez constater l’évolution du projet, les refactorisations successives et les optimisations que j’ai mises en œuvre au fil du temps.
-
-## **Mot de Fin**
-
-J’espère sincèrement que ce portfolio retiendra votre attention et reflétera fidèlement mon engagement, ma progression et ma passion pour le développement.
+### Mot de la fin
+J'espère que cette approche originale vous plaira. Ce portfolio est le reflet fidèle de mon engagement et de ma passion pour le développement web.
 
 **Peace! ✌️**
