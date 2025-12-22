@@ -13,6 +13,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: VT323;
+    color: var(--txt-color);
 }
 
 :root {
@@ -26,8 +27,29 @@
     --txt-color: #fdfffe;
     --txt-bg: rgb(17, 21, 11, 0.8);
     --splash-text: #f8fc0e;
+    --bg-settings: #969598;
+    --bg-input: #888588;
 }
 
 body, main { overflow: hidden; }
 
+footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    
+    p {
+        margin-top: auto;
+        background-color: var(--txt-bg);
+        padding: 10px;
+        color: var(--txt-color);
+        font-size: 1.5vmax;
+    }
+}
+
 a { text-decoration: none; }
+
+.hidden { display: none !important; }

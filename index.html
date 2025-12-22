@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/background.css">
     <link rel="stylesheet" href="assets/css/home.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/settings.css">
     <!-- Preload Fonts -->
     <link rel="preload" href="assets/font/Poppins.ttf" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/font/Silkscreen.ttf" as="font" type="font/woff2" crossorigin>
@@ -30,9 +30,31 @@
             <img src="assets/img/title.png" alt="title">
             <p class="splash-text">Full-stack Web Developer</p>
             <div class="btns">
-                <button class="btn">Découvrir</button>
-                <button class="btn">Paramètres</button>
+                <button class="discover-btn">Découvrir</button>
+                <button class="settings-btn">Paramètres</button>
                 <a href="assets/res/fr/cv/Développeur Web - NOURDINE El-Khair.pdf" target="_blank" rel="noopener noreferrer"><button class="resume">Consulter mon CV</button></a>
+            </div>
+        </section>
+
+        <section id="settings" class="hidden">
+            <div class="header">
+                <div><span class="back"><</span>Paramètres</div>
+                <div>Langues</div>
+            </div>
+            <div class="content">
+                <div class="nav">
+                    <p>🌐 Langues</p>
+                </div>
+                <div class="language">
+                    <div class="french">
+                        <input type="radio" name="language" id="fr" checked>
+                        <label for="fr">Français (France)</label>
+                    </div>
+                    <div class="english">
+                        <input type="radio" name="language" id="en">
+                        <label for="en">English (United States)</label>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

@@ -50,7 +50,7 @@
             border-color: var(--btn-border-color-hover);
         }
 
-        .btn:hover { background-color: var(--bg-btn-hover); }
+        .settings-btn:hover, .discover-btn:hover { background-color: var(--bg-btn-hover); }
     }
 }
 
