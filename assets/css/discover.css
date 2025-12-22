@@ -3,4 +3,54 @@
     top: 0;
     width: 100%;
     height: 100%;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--bg-btn);
+        height: 100px;
+        padding: 10px;
+        border-bottom: 3px solid var(--btn-border-color);
+
+        .back {
+            width: 25%;
+
+            span {
+                font-size: 2vmax;
+                color: var(--txt-btn-color);
+                cursor: pointer;
+            }
+        }
+
+        .title {
+            text-align: center;
+            width: 45%;
+
+            span {
+                font-size: 4vmax;
+                color: var(--txt-btn-color);
+            }
+        }
+
+        .network {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 25%;
+            height: 100%;
+            cursor: pointer;
+            
+            p { 
+                color: var(--txt-btn-color); 
+                font-size: 2vmax;
+            }
+
+            img {
+                height: 60%;
+                margin-right: 20px;
+                border: 3px solid var(--btn-border-color);
+            }
+        }
+    }
 }
