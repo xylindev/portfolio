@@ -30,29 +30,49 @@
             <img src="assets/img/title.png" alt="title">
             <p class="splash-text">Full-stack Web Developer</p>
             <div class="btns">
-                <button class="discover-btn">Découvrir</button>
-                <button class="settings-btn">Paramètres</button>
-                <a href="assets/res/fr/cv/Développeur Web - NOURDINE El-Khair.pdf" target="_blank" rel="noopener noreferrer"><button class="resume">Consulter mon CV</button></a>
+                <button class="discover-btn">
+                    <span class="fr">Découvrir</span>
+                    <span class="en hidden">Discover</span>
+                </button>
+                <button class="settings-btn">
+                    <span class="fr">Paramètres</span>
+                    <span class="en hidden">Settings</span>
+                </button>
+                <button class="resume">
+                    <a href="assets/res/fr/cv/Développeur Web - NOURDINE El-Khair.pdf" class="fr" target="_blank" rel="noopener noreferrer">Consulter mon CV</a>
+                    <a href="assets/res/en/resume/Web Developer - NOURDINE El-Khair.pdf" class="en hidden" target="_blank" rel="noopener noreferrer">View my Resume</a>
+                </button>
             </div>
         </section>
 
         <section id="settings" class="hidden">
             <div class="header">
-                <div><span class="back"><</span>Paramètres</div>
-                <div>Langues</div>
+                <div>
+                    <span class="back"><</span>
+                    <span class="fr">Paramètres</span>
+                    <span class="en hidden">Settings</span>
+                </div>
+                <div>
+                    <span class="fr">Langues</span>
+                    <span class="en hidden">Languages</span>
+                </div>
             </div>
             <div class="content">
                 <div class="nav">
-                    <p>🌐 Langues</p>
+                    <p>
+                        🌐
+                        <span class="fr">Langues</span>
+                        <span class="en hidden">Languages</span>
+                    </p>
                 </div>
                 <div class="language">
                     <div class="french">
-                        <input type="radio" name="language" id="fr" checked>
-                        <label for="fr">Français (France)</label>
+                        <input type="radio" name="language" id="français" checked>
+                        <label for="français">Français (France)</label>
                     </div>
                     <div class="english">
-                        <input type="radio" name="language" id="en">
-                        <label for="en">English (United States)</label>
+                        <input type="radio" name="language" id="anglais">
+                        <label for="anglais">English (United States)</label>
                     </div>
                 </div>
             </div>
@@ -60,7 +80,10 @@
     </main>
 
     <footer>
-        <p class="caution">Ce portfolio n'est pas affilié à Mojang ou Microsoft. Design inspiré par Minecraft.</p>
+        <p class="caution">
+            <span class="fr">Ce portfolio n'est pas affilié à Mojang ou Microsoft. Design inspiré par Minecraft.</span>
+            <span class="en hidden">This portfolio is not affiliated with Mojang or Microsoft. Design inspired by Minecraft.</span>
+        </p>
         <p class="version">v1.0.1</p>
     </footer>
 </body>

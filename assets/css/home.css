@@ -27,8 +27,7 @@
         flex-direction: column;
         width: 30%;
 
-        a { width: 100%; }
-
+        
         button {
             width: 100%;
             padding: 20px;
@@ -36,16 +35,25 @@
             cursor: pointer;
             font-size: 3vmax;
             background-color: var(--bg-btn);
-            color: var(--txt-btn-color);
             border: 5px solid var(--btn-border-color);
+        }
+        
+        button span { color: var(--txt-btn-color); }
+
+        button a { 
+            display: inline-block;
+            color: var(--txt-btn-color-hover);
+            height: 100%;
+            width: 100%;
+            padding: 20px;
         }
 
         button.resume {
+            padding: 0;
             background-color: var(--bg-resume-btn);
-            color: var(--txt-btn-color-hover);
         }
 
-        button:hover {
+        button:hover span{
             color: var(--txt-btn-color-hover);
             border-color: var(--btn-border-color-hover);
         }
