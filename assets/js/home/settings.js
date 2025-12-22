@@ -9,7 +9,7 @@ export const openSettings = () => {
 }
 
 export const closeSettings = () => {
-    const spanBack = document.querySelector('.back')
+    const spanBack = document.querySelector('#settings .back')
 
     spanBack.addEventListener('click', () => {
         settingsSection.classList.toggle('hidden')
