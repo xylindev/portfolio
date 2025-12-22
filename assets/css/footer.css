@@ -1,0 +1,16 @@
+footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    
+    p {
+        margin-top: auto;
+        background-color: var(--txt-bg);
+        padding: 10px;
+        color: var(--txt-color);
+        font-size: 1.5vmax;
+    }
+}

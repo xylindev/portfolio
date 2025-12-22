@@ -12,9 +12,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Silkscreen;
+    font-family: VT323;
 }
 
-body {
-    overflow: hidden;
+:root {
+    --bg-btn: #fefefe;
+    --bg-btn-hover: #208305;
+    --btn-border-color: #131115;
+    --btn-border-color-hover: #f2fef6;
+    --bg-resume-btn: #7345e5;
+    --txt-btn-color: #484848;
+    --txt-btn-color-hover: #f2fbf0;
+    --txt-color: #fdfffe;
+    --txt-bg: rgb(17, 21, 11, 0.8);
+    --splash-text: #f8fc0e;
 }
+
+body, main { overflow: hidden; }
+
+a { text-decoration: none; }

@@ -1,0 +1,60 @@
+#home {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+
+    img { margin-bottom: 50px; }
+
+    .splash-text {
+        color: var(--splash-text);
+        font-size: 2vmax;
+        position: relative;
+        top: -150px;
+        left: 450px;
+        animation: scales 1s alternate infinite;
+    }
+
+    .btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 30%;
+
+        a { width: 100%; }
+
+        button {
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            font-size: 3vmax;
+            background-color: var(--bg-btn);
+            color: var(--txt-btn-color);
+            border: 5px solid var(--btn-border-color);
+        }
+
+        button.resume {
+            background-color: var(--bg-resume-btn);
+            color: var(--txt-btn-color-hover);
+        }
+
+        button:hover {
+            color: var(--txt-btn-color-hover);
+            border-color: var(--btn-border-color-hover);
+        }
+
+        .btn:hover { background-color: var(--bg-btn-hover); }
+    }
+}
+
+@keyframes scales {
+    from { transform: scale(100%) rotate(-20deg); }
+    to { transform: scale(125%) rotate(-20deg); }
+}
