@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El-Khair NOURDINE</title>
     <!-- Portfolio Icon -->
-    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+    <link rel="icon" type="image/x-icon" href="assets/img/icons/logo.png">
     <!-- Bootstrap Icons  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Flags Icons -->
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/settings.css">
     <link rel="stylesheet" href="assets/css/discover.css">
+    <link rel="stylesheet" href="assets/css/discover/network.css">
     <!-- Preload Fonts -->
     <link rel="preload" href="assets/font/Poppins.ttf" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/font/Silkscreen.ttf" as="font" type="font/woff2" crossorigin>
@@ -25,10 +26,10 @@
 </head>
 <body>
     <main>
-        <img src="assets/img/panoramic.jpeg" alt="panoramic-bg">
+        <img src="assets/img/background/panoramic.jpeg" alt="panoramic-bg">
 
         <section id="home">
-            <img src="assets/img/title.png" alt="title">
+            <img src="assets/img/home/title.png" alt="title">
             <p class="splash-text">
                 <span class="fr"></span>
                 <span class="en hidden"></span>
@@ -52,7 +53,7 @@
         <section id="settings" class="hidden">
             <div class="header">
                 <div class="title-section">
-                    <div class="back"><</div>
+                    <button class="back"><</button>
                     <span class="fr">Paramètres</span>
                     <span class="en hidden">Settings</span>
                 </div>
@@ -63,11 +64,11 @@
             </div>
             <div class="content">
                 <div class="nav">
-                    <p class="language-setting selected">
+                    <button class="language-setting selected">
                         🌐
                         <span class="fr">Langues</span>
                         <span class="en hidden">Languages</span>
-                    </p>
+                    </button>
                 </div>
                 <div class="language">
                     <div class="french">
@@ -84,14 +85,62 @@
 
         <section id="discover" class="hidden">
             <div class="header">
-                <div class="back"><</div>
+                <button class="back"><</button>
                 <div class="title">
                     <span class="fr">Découverte</span>
                     <span class="en hidden">Discovery</span>
                 </div>
-                <div class="network">
-                    <img src="assets/img/networks.jpg" alt="network">
+                <button class="networks-btn">
+                    <img src="assets/img/networks/networks.jpg" alt="network">
                     <p>Social (4)</p>
+                </button>
+            </div>
+
+            <div class="networks hidden">
+                <div class="container">
+                    <div class="header-network">
+                        <span class="fr">Réseaux (4)</span>
+                        <span class="en hidden">Networks (4)</span>
+                        <button class="close-btn">X</button>
+                    </div>
+                    <div class="content">
+                        <a href="https://github.com/xylindev" target="_blank" rel="noopener noreferrer">
+                            <div class="visual">
+                                <img src="assets/img/networks/github.png" alt="github">
+                                <div class="description">
+                                    <p class="title">GitHub</p>
+                                    <p class="username">xylindev</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/xylindev/" target="_blank" rel="noopener noreferrer">
+                            <div class="visual">
+                                <img src="assets/img/networks/linkedin.png" alt="linkedin">
+                                <div class="description">
+                                    <p class="title">LinkedIn</p>
+                                    <p class="username">El-Khaïr NOURDINE</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/its.xylin/" target="_blank" rel="noopener noreferrer">
+                            <div class="visual">
+                                <img src="assets/img/networks/instagram.png" alt="instagram">
+                                <div class="description">
+                                    <p class="title">Instagram</p>
+                                    <p class="username">its.xylin</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://discord.com/users/932928768681594881" target="_blank" rel="noopener noreferrer">
+                            <div class="visual">
+                                <img src="assets/img/networks/discord.png" alt="discord">
+                                <div class="description">
+                                    <p class="title">Discord</p>
+                                    <p class="username">itsxylin</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

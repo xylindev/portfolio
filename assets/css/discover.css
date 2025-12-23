@@ -13,6 +13,8 @@
         border-bottom: 5px solid #C9CACE;
 
         .back {
+            border: none;
+            background-color: transparent;
             cursor: pointer;
             font-size: 3vmax;
             color: #2F2F2F;
@@ -21,7 +23,6 @@
             display: grid;
             place-content: center;
         }
-        
         
         .title {
             position: absolute;
@@ -34,7 +35,9 @@
             }
         }
         
-        .network {
+        .networks-btn {
+            background-color: transparent;
+            border: none;
             display: flex;
             justify-content: flex-end;
             align-items: center;
@@ -55,7 +58,7 @@
             }
         }
 
-        .back:hover, .network:hover {
+        .back:hover, .networks-btn:hover {
             background-color: #E5E9EC;
             color: #000104;
             p {color: #000104; }

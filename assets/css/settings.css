@@ -36,6 +36,8 @@
         }
         
         .back { 
+            border: none;
+            background-color: transparent;
             cursor: pointer;
             font-size: 2.5vmax;
             color: #575757;
@@ -68,7 +70,9 @@
         width: 30%;
         border-right: 3px solid #0E0E0E;
 
-        p {
+        button {
+            width: 100%;
+            text-align: start;
             cursor: pointer;
             font-size: 2.5vmax;
             padding: 10px;
@@ -85,7 +89,7 @@
             span { color: #313131; }
         }
 
-        p:hover {
+        button:hover {
             border-color: #EBEBEB;
             background-color: #28940B;
             

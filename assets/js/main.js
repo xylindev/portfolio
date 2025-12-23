@@ -1,3 +1,4 @@
+import { closeNetworks, openNetworks } from "./discover/network.js"
 import { closeDiscover, openDiscover } from "./home/discover.js"
 import { closeSettings, openSettings } from "./home/settings.js"
 import { reloadParagraph } from "./home/splash-text.js"
@@ -11,6 +12,8 @@ const main = () => {
     checkLanguages()
     openDiscover()
     closeDiscover()
+    openNetworks()
+    closeNetworks()
 }
 
 main()
