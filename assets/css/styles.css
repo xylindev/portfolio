@@ -13,22 +13,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: VT323;
-    color: var(--txt-color);
-}
-
-:root {
-    --bg-btn: #fefefe;
-    --bg-btn-hover: #208305;
-    --btn-border-color: #131115;
-    --btn-border-color-hover: #f2fef6;
-    --bg-resume-btn: #7345e5;
-    --txt-btn-color: #484848;
-    --txt-btn-color-hover: #f2fbf0;
-    --txt-color: #fdfffe;
-    --txt-bg: rgb(17, 21, 11, 0.8);
-    --splash-text: #f8fc0e;
-    --bg-settings: #969598;
-    --bg-input: #888588;
+    color: #EBEBEB;
 }
 
 body, main { overflow: hidden; }
@@ -43,8 +28,7 @@ footer {
     
     p {
         margin-top: auto;
-        background-color: var(--txt-bg);
-        color: var(--txt-color);
+        background-color: rgb(45, 48, 45, 0.9);
         font-size: 1.5vmax;
         
         span {

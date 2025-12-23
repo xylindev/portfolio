@@ -12,7 +12,8 @@
     img { margin-bottom: 50px; }
 
     .splash-text {
-        color: var(--splash-text);
+        color: #FFFF00;
+        text-shadow: 4px 4px #4E4E0D;
         font-size: 2vmax;
         position: relative;
         top: -150px;
@@ -27,38 +28,37 @@
         flex-direction: column;
         width: 30%;
 
-        
         button {
             width: 100%;
-            padding: 20px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             cursor: pointer;
+            padding: 20px;
             font-size: 3vmax;
-            background-color: var(--bg-btn);
-            border: 5px solid var(--btn-border-color);
+            background-color: #D7D7D7;
+            border: 5px solid #262626;
         }
         
-        button span { color: var(--txt-btn-color); }
+        button span { 
+            color: #575757; 
+        }
 
         button a { 
             display: inline-block;
-            color: var(--txt-btn-color-hover);
+            color: #EBEBEB;
             height: 100%;
             width: 100%;
             padding: 20px;
         }
 
-        button.resume {
+        .resume {
             padding: 0;
-            background-color: var(--bg-resume-btn);
+            background-color: #894EFF;
         }
 
-        button:hover span{
-            color: var(--txt-btn-color-hover);
-            border-color: var(--btn-border-color-hover);
-        }
-
-        .settings-btn:hover, .discover-btn:hover { background-color: var(--bg-btn-hover); }
+        button:hover { border-color: #EBEBEB; }
+        button:hover span { color: #EBEBEB; }
+        .settings-btn:hover, .discover-btn:hover { background-color: #28940B; }
+        .resume:hover { background-color: #6D33E1; }
     }
 }
 
