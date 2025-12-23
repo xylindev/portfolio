@@ -12,13 +12,14 @@
     img { margin-bottom: 50px; }
 
     .splash-text {
-        color: #FFFF00;
         text-shadow: 4px 4px #4E4E0D;
         font-size: 2vmax;
         position: relative;
         top: -150px;
         left: 450px;
         animation: scales 1s alternate infinite;
+
+        span { color: #FFFF00; }
     }
 
     .btns {
