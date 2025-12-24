@@ -10,7 +10,7 @@
     align-items: center;
     flex-direction: column;
 
-    .header {
+    header {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -59,14 +59,14 @@
         display: flex;
         justify-content: space-between;
 
-        .nav, .language {
+        nav, .language {
             background-color: #3F4041;
             border-top: 3px solid #0E0E0E;
             padding: 10px;
         }
     }
 
-    .content .nav {
+    .content nav {
         width: 30%;
         border-right: 3px solid #0E0E0E;
 
@@ -113,7 +113,7 @@
         div input[type="radio"] {
             -webkit-appearance: none;
             appearance: none;
-            height: 80%;
+            height: 75%;
             aspect-ratio: 1 / 1;
             border: 5px solid #000002;
             margin-right: 15px;
@@ -128,7 +128,7 @@
         }
 
         div input[type="radio"]:checked::before {
-            padding: 5px;
+            padding: 7.5px;
             background-color: #D5D5D5;
             background-clip: content-box;
         }

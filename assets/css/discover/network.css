@@ -16,11 +16,11 @@
             border-top: 5px solid #2E2F34;
         }
 
-        .container .header-network, .container .content {
+        .container header, .container .content {
             width: 100%;
         }
 
-        .container .header-network {
+        .container header {
             height: 100px;
             display: flex;
             justify-content: space-between;
