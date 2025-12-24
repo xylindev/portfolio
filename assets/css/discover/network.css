@@ -8,6 +8,7 @@
         display: flex;
         align-items: flex-end;
         flex-direction: column;
+        z-index: 1;
         
         .container {
             width: 40%;

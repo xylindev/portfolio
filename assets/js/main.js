@@ -1,3 +1,4 @@
+import { changeSection } from "./discover/nav.js"
 import { closeNetworks, openNetworks } from "./discover/network.js"
 import { closeDiscover, openDiscover } from "./home/discover.js"
 import { closeSettings, openSettings } from "./home/settings.js"
@@ -14,6 +15,7 @@ const main = () => {
     closeDiscover()
     openNetworks()
     closeNetworks()
+    changeSection()
 }
 
 main()

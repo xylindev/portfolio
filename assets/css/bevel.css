@@ -85,3 +85,30 @@
     }
 }
 
+#portfolio {
+    button .bevel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-top: 5px solid #7B7B7B;
+        border-left: 5px solid #7C7C7E;
+        border-right: 5px solid #666769;
+        border-bottom: 5px solid #666769;
+    }
+
+    .selected button .bevel {
+        border-top: 5px solid #656668;
+        border-left: 5px solid #7C7C7E;
+        border-right: 5px solid #656766;
+        border-bottom: 5px solid #525252;
+    }
+
+    .selected button .bevel::after {
+        content: "";
+        border-bottom: 5px solid #E9EBEA;
+        width: 2.5%;
+        position: absolute;
+        top: 200px;
+    }
+}
