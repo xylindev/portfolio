@@ -33,7 +33,6 @@
             width: 100%;
             margin-bottom: 10px;
             cursor: pointer;
-            padding: 20px;
             font-size: 3vmax;
             background-color: #D7D7D7;
             border: 5px solid #262626;
@@ -48,7 +47,6 @@
             color: #EBEBEB;
             height: 100%;
             width: 100%;
-            padding: 20px;
         }
 
         .resume {

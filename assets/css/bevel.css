@@ -1,0 +1,87 @@
+.bevel {
+    width: 100%;
+    height: 100%;
+}
+
+#home {
+    .bevel {
+        padding: 20px;
+        border-top: 5px solid #E9E9E9;
+        border-left: 5px solid #E9E9E9;
+        border-right: 5px solid #727272;
+        border-bottom: 5px solid #727272;
+    }
+
+    .resume .bevel {
+        padding: 20px;
+        border-top: 5px solid #C16FFF;
+        border-left: 5px solid #BF70FD;
+        border-right: 5px solid #5523C0;
+        border-bottom: 5px solid #5623C0;
+    }
+
+    .settings-btn:hover .bevel, .discover-btn:hover .bevel { 
+        border-top: 5px solid #00E800;
+        border-left: 5px solid #01E900;
+        border-right: 5px solid #115C09;
+        border-bottom: 5px solid #0E5B0B;
+    }
+
+    .resume:hover .bevel {
+        border-top: 5px solid #321E7D;
+        border-left: 5px solid #312179;
+        border-right: 5px solid #CA74FF;
+        border-bottom: 5px solid #CE73FE;
+    }
+}
+
+#settings {
+    button .bevel {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        border-top: 5px solid #E8E8E8;
+        border-left: 5px solid #E8E8E8;
+        border-right: 5px solid #737373;
+        border-bottom: 5px solid #737174;
+    }
+
+    .selected .bevel {
+        border-top: 5px solid #666666;
+        border-left: 5px solid #666666;
+        border-right: 5px solid #E2E2E2;
+        border-bottom: 5px solid #E2E2E2;
+    }
+
+    button:hover .bevel {
+        border-top: 5px solid #34C431;
+        border-left: 5px solid #1DD616;
+        border-right: 5px solid #0F5E0F;
+        border-bottom: 5px solid #0F5C0C;
+    }
+
+    .selected:hover .bevel {
+        border-top: 5px solid #0A5E06;
+        border-left: 5px solid #105A0B;
+        border-right: 5px solid #00E700;
+        border-bottom: 5px solid #00E600;
+    }
+}
+
+#networks {
+    .visual .bevel {
+        padding: 10px;
+        border-top: 5px solid #666769;
+        border-left: 5px solid #616264;
+        border-right: 5px solid #404143;
+        border-bottom: 5px solid #404042;
+    }
+
+    .visual:hover .bevel {
+        border-top: 5px solid #777779;
+        border-left: 5px solid #767678;
+        border-right: 5px solid #4A4A4A;
+        border-bottom: 5px solid #49494A;
+    }
+}
+

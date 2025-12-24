@@ -75,7 +75,6 @@
             text-align: start;
             cursor: pointer;
             font-size: 2.5vmax;
-            padding: 10px;
             border: 5px solid #272727;
             background-color: #D7D7D7;
             span { color: #575757; }
@@ -136,6 +135,16 @@
 
         div:has(input[type="radio"]:checked) {
             background-color: #555356;
+        }
+
+        div:hover {
+            background-color: #1D8303;
+            input[type="radio"] { border-color: #EAECEB; }
+        }
+
+        div:has(input[type="radio"]:checked):hover {
+            background-color: #1D8303;
+            input[type="radio"] { border-color: #EAECEB; }
         }
     }
 }

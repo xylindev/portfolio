@@ -1,5 +1,5 @@
 #discover {
-    .networks {
+    #networks {
         position: absolute;
         top: 0;
         width: 100%;
@@ -68,10 +68,12 @@
             height: 20%;
             border: 5px solid #313133;
             border-top: none;
-            padding: 10px;
             background-color: #535456;
-            display: flex;
-            align-items: center;
+
+            .bevel {
+                display: flex;
+                align-items: center;
+            }
 
             img {
                 height: 100%;
@@ -86,5 +88,7 @@
                 .username { font-size: 2vmax; }
             }
         }
+
+        .container .content .visual:hover { background-color: #646466; }
     }
 }

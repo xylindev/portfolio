@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/settings.css">
     <link rel="stylesheet" href="assets/css/discover.css">
     <link rel="stylesheet" href="assets/css/discover/network.css">
+    <link rel="stylesheet" href="assets/css/bevel.css">
     <!-- Preload Fonts -->
     <link rel="preload" href="assets/font/Poppins.ttf" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/font/Silkscreen.ttf" as="font" type="font/woff2" crossorigin>
@@ -36,16 +37,22 @@
             </p>
             <div class="btns">
                 <button class="discover-btn">
-                    <span class="fr">Découvrir</span>
-                    <span class="en hidden">Discover</span>
+                    <div class="bevel">
+                        <span class="fr">Découvrir</span>
+                        <span class="en hidden">Discover</span>
+                    </div>
                 </button>
                 <button class="settings-btn">
-                    <span class="fr">Paramètres</span>
-                    <span class="en hidden">Settings</span>
+                    <div class="bevel">
+                        <span class="fr">Paramètres</span>
+                        <span class="en hidden">Settings</span>
+                    </div>
                 </button>
                 <button class="resume">
-                    <a href="assets/res/fr/cv/Développeur Web - NOURDINE El-Khair.pdf" class="fr" target="_blank" rel="noopener noreferrer">Consulter mon CV</a>
-                    <a href="assets/res/en/resume/Web Developer - NOURDINE El-Khair.pdf" class="en hidden" target="_blank" rel="noopener noreferrer">View my Resume</a>
+                    <div class="bevel">
+                        <a href="assets/res/fr/cv/Développeur Web - NOURDINE El-Khair.pdf" class="fr" target="_blank" rel="noopener noreferrer">Consulter mon CV</a>
+                        <a href="assets/res/en/resume/Web Developer - NOURDINE El-Khair.pdf" class="en hidden" target="_blank" rel="noopener noreferrer">View my Resume</a>
+                    </div>
                 </button>
             </div>
         </section>
@@ -65,9 +72,11 @@
             <div class="content">
                 <div class="nav">
                     <button class="language-setting selected">
-                        🌐
-                        <span class="fr">Langues</span>
-                        <span class="en hidden">Languages</span>
+                        <div class="bevel">
+                            🌐
+                            <span class="fr">Langues</span>
+                            <span class="en hidden">Languages</span>
+                        </div>
                     </button>
                 </div>
                 <div class="language">
@@ -96,7 +105,7 @@
                 </button>
             </div>
 
-            <div class="networks hidden">
+            <section id="networks" class="hidden">
                 <div class="container">
                     <div class="header-network">
                         <span class="fr">Réseaux (4)</span>
@@ -106,43 +115,54 @@
                     <div class="content">
                         <a href="https://github.com/xylindev" target="_blank" rel="noopener noreferrer">
                             <div class="visual">
-                                <img src="assets/img/networks/github.png" alt="github">
-                                <div class="description">
-                                    <p class="title">GitHub</p>
-                                    <p class="username">xylindev</p>
+                                <div class="bevel">
+                                    <img src="assets/img/networks/github.png" alt="github">
+                                    <div class="description">
+                                        <p class="title">GitHub</p>
+                                        <p class="username">xylindev</p>
+                                    </div>
                                 </div>
+                                
                             </div>
                         </a>
                         <a href="https://www.linkedin.com/in/xylindev/" target="_blank" rel="noopener noreferrer">
                             <div class="visual">
-                                <img src="assets/img/networks/linkedin.png" alt="linkedin">
-                                <div class="description">
-                                    <p class="title">LinkedIn</p>
-                                    <p class="username">El-Khaïr NOURDINE</p>
+                                <div class="bevel">
+                                    <img src="assets/img/networks/linkedin.png" alt="linkedin">
+                                    <div class="description">
+                                        <p class="title">LinkedIn</p>
+                                        <p class="username">El-Khaïr NOURDINE</p>
+                                    </div>
                                 </div>
+                                
                             </div>
                         </a>
                         <a href="https://www.instagram.com/its.xylin/" target="_blank" rel="noopener noreferrer">
                             <div class="visual">
-                                <img src="assets/img/networks/instagram.png" alt="instagram">
-                                <div class="description">
-                                    <p class="title">Instagram</p>
-                                    <p class="username">its.xylin</p>
+                                <div class="bevel">
+                                    <img src="assets/img/networks/instagram.png" alt="instagram">
+                                    <div class="description">
+                                        <p class="title">Instagram</p>
+                                        <p class="username">its.xylin</p>
+                                    </div>
                                 </div>
+                                
                             </div>
                         </a>
                         <a href="https://discord.com/users/932928768681594881" target="_blank" rel="noopener noreferrer">
                             <div class="visual">
-                                <img src="assets/img/networks/discord.png" alt="discord">
-                                <div class="description">
-                                    <p class="title">Discord</p>
-                                    <p class="username">itsxylin</p>
+                                <div class="bevel">
+                                    <img src="assets/img/networks/discord.png" alt="discord">
+                                    <div class="description">
+                                        <p class="title">Discord</p>
+                                        <p class="username">itsxylin</p>
+                                    </div>
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
-            </div>
+            </section>
         </section>
     </main>
 
