@@ -21,17 +21,17 @@
     }
 
     .settings-btn:hover .bevel, .discover-btn:hover .bevel { 
-        border-top: 5px solid #00E800;
-        border-left: 5px solid #01E900;
-        border-right: 5px solid #115C09;
-        border-bottom: 5px solid #0E5B0B;
+        border-top-color: #00E800;
+        border-left-color: #01E900;
+        border-right-color: #115C09;
+        border-bottom-color: #0E5B0B;
     }
 
     .resume:hover .bevel {
-        border-top: 5px solid #321E7D;
-        border-left: 5px solid #312179;
-        border-right: 5px solid #CA74FF;
-        border-bottom: 5px solid #CE73FE;
+        border-top-color: #321E7D;
+        border-left-color: #312179;
+        border-right-color: #CA74FF;
+        border-bottom-color: #CE73FE;
     }
 }
 
@@ -54,17 +54,17 @@
     }
 
     button:hover .bevel {
-        border-top: 5px solid #34C431;
-        border-left: 5px solid #1DD616;
-        border-right: 5px solid #0F5E0F;
-        border-bottom: 5px solid #0F5C0C;
+        border-top-color: #34C431;
+        border-left-color: #1DD616;
+        border-right-color: #0F5E0F;
+        border-bottom-color: #0F5C0C;
     }
 
     .selected:hover .bevel {
-        border-top: 5px solid #0A5E06;
-        border-left: 5px solid #105A0B;
-        border-right: 5px solid #00E700;
-        border-bottom: 5px solid #00E600;
+        border-top-color: #0A5E06;
+        border-left-color: #105A0B;
+        border-right-color: #00E700;
+        border-bottom-color: #00E600;
     }
 }
 
@@ -78,10 +78,10 @@
     }
 
     .visual:hover .bevel {
-        border-top: 5px solid #777779;
-        border-left: 5px solid #767678;
-        border-right: 5px solid #4A4A4A;
-        border-bottom: 5px solid #49494A;
+        border-top-color: #777779;
+        border-left-color: #767678;
+        border-right-color: #4A4A4A;
+        border-bottom-color: #49494A;
     }
 }
 
@@ -111,4 +111,12 @@
         position: absolute;
         top: 85px;
     }
+
+    li:not(.selected) button:hover .bevel {
+        background-color: #646466;
+        border-top-color: #888888;
+        border-right-color: #8A8A8C;
+        border-left-color: #767678;
+        border-bottom-color: #777779;
+    } 
 }
