@@ -38,9 +38,7 @@
             border: 5px solid #262626;
         }
         
-        button span { 
-            color: #575757; 
-        }
+        button span { color: #575757; }
 
         button a { 
             display: inline-block;
@@ -49,10 +47,7 @@
             width: 100%;
         }
 
-        .resume {
-            padding: 0;
-            background-color: #894EFF;
-        }
+        .resume { background-color: #894EFF; }
 
         button:hover { border-color: #EBEBEB; }
         button:hover span { color: #EBEBEB; }

@@ -5,12 +5,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 15px;
+        position: absolute;
+        top: 125px;
 
         .begin, .end {
             font-weight: 600;
             font-size: 1.5vmax;
-            position: relative;
+            position: absolute;
             border: 5px solid #626262;
             color: #080808;
             background-color: #E3E3E3;
@@ -20,11 +21,11 @@
             place-content: center;
         }
 
-        .begin { left: 25px; }
-        .end { right: 25px; }
+        .begin { left: 1.5%; }
+        .end { right: 1.5%; }
 
         ul {
-            width: 97.5%;
+            width: 96%;
             height: 90%;
             display: flex;
             justify-content: center;

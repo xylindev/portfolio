@@ -107,8 +107,8 @@
     .selected button .bevel::after {
         content: "";
         border-bottom: 5px solid #E9EBEA;
-        width: 2.5%;
+        width: 5%;
         position: absolute;
-        top: 200px;
+        top: 85px;
     }
 }
