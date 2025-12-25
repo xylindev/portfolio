@@ -1,0 +1,35 @@
+#portfolio {
+    width: 95%;
+    height: calc(100vh - 220px);
+    position: absolute;
+    left: 2.5%;
+    top: 220px;
+    overflow-y: scroll;
+
+    section:first-of-type { margin-top: 20px; }
+    
+    section {
+        width: 99.5%;
+        height: 100%;
+        background-color: #3F4042;
+        border: 5px solid #303030;
+        margin-bottom: 20px;
+    }
+}
+
+#portfolio::-webkit-scrollbar {
+	width: 25px;
+}
+
+#portfolio::-webkit-scrollbar-track-piece {
+	border: 7.5px solid transparent;
+	margin: 20px 0 20px 0;
+    box-shadow: inset 15px 15px #646464;
+}
+
+#portfolio::-webkit-scrollbar-thumb {
+	border: 5px solid black;
+    background-color: #E1E5E8;
+    box-shadow: inset 0 -10px #646464;
+    cursor: grab;
+}

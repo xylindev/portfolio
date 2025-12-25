@@ -85,7 +85,7 @@
     }
 }
 
-#portfolio {
+#discover nav {
     button .bevel {
         display: flex;
         justify-content: center;
@@ -112,7 +112,7 @@
         top: 85px;
     }
 
-    li:not(.selected) button:hover .bevel {
+    a:not(.selected) button:hover .bevel {
         background-color: #646466;
         border-top-color: #888888;
         border-right-color: #8A8A8C;
