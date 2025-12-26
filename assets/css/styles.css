@@ -16,7 +16,10 @@
     color: #EBEBEB;
 }
 
-body, main { overflow: hidden; }
+body, main { 
+    overflow: hidden; 
+    height: 100vh;
+}
 
 footer {
     width: 100%;
