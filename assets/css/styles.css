@@ -8,6 +8,11 @@
     src: url(../font/VT323.ttf);
 }
 
+@font-face {
+    font-family: Poppins;
+    src: url(../font/Poppins.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
