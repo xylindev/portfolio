@@ -1,0 +1,78 @@
+#portfolio #introduction {
+    display: flex;
+    flex-direction: column;
+
+    .dl-resume {
+        border: 5px solid #2F3130;
+        background-color: #894EFF;
+        height: 12.5%;
+        width: 25%;
+        font-size: 2vmax;
+        position: relative;
+        left: 75%;
+        
+        a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            border-bottom: 10px solid #5923C3;
+        }
+
+        img { 
+            height: 65%; 
+            filter: invert(0.9);
+        }
+    }
+
+    .dl-resume:hover { background-color: #6D33E0; }
+
+    .content {
+        width: 100%;
+        height: 80%;
+        background-color: #14163C;
+        border: 5px solid #303030;
+        margin-top: 1.5%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row-reverse;
+
+        .img {
+            width: 30%;
+            height: 85%;
+            text-align: end;
+
+            img { 
+                height: 100%;
+                transform: scaleX(-1);
+            }
+        }
+
+        .description {
+            width: 65%;
+            height: 85%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            .name {
+                font-size: 5vmax;
+                font-weight: 600;
+                span { color: #FE21E3; }
+            }
+
+            .job { 
+                font-size: 2.5vmax; 
+                text-align: justify;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .wish {
+        width: 95%;
+        text-align: center;
+        font-size: 1.5vmax;
+        transform: translateY(-175%);
+    }
+}

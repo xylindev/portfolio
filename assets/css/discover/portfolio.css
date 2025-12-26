@@ -4,15 +4,14 @@
     position: absolute;
     left: 2.5%;
     top: 220px;
+    overflow: hidden;
     overflow-y: scroll;
 
     section:first-of-type { margin-top: 20px; }
     
     section {
         width: 99.5%;
-        height: 100%;
-        background-color: #3F4042;
-        border: 5px solid #303030;
+        height: 95%;
         margin-bottom: 20px;
     }
 }

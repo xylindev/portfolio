@@ -120,3 +120,22 @@
         border-bottom-color: #777779;
     } 
 }
+
+#portfolio #introduction {
+    .dl-resume .bevel {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: 5px solid #BD6FFF;
+        border-left: 5px solid #BB75F2;
+        border-right: 5px solid #A256EE;
+        border-bottom: 5px solid #A652FF;
+    }
+
+    .dl-resume:hover .bevel {
+        border-top-color: #CD75FF;
+        border-right-color: #A849FD;
+        border-left-color: #C975FF;
+        border-bottom-color: #AD4AFF;
+    }
+}
