@@ -37,7 +37,7 @@ footer {
     p {
         margin-top: auto;
         background-color: rgb(45, 48, 45, 0.9);
-        font-size: 1.5vmax;
+        font-size: 3vmin;
         display: flex;
         align-items: center;
         padding: 10px;

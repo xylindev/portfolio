@@ -9,14 +9,17 @@
     flex-direction: column;
     z-index: 1;
 
-    img { margin-bottom: 50px; }
+    img { 
+        margin-bottom: 2.5%; 
+        width: 50%;
+    }
 
     .splash-text {
         text-shadow: 4px 4px #4E4E0D;
-        font-size: 2vmax;
+        font-size: 3.5vmin;
         position: relative;
-        top: -150px;
-        left: 450px;
+        top: -10%;
+        left: 25%;
         animation: scales 1s alternate infinite;
 
         span { color: #FFFF00; }
@@ -33,7 +36,7 @@
             width: 100%;
             margin-bottom: 10px;
             cursor: pointer;
-            font-size: 3vmax;
+            font-size: 5vmin;
             background-color: #D7D7D7;
             border: 5px solid #262626;
         }

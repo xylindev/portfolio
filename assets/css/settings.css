@@ -28,6 +28,8 @@
             width: 30%; 
             display: flex;
             align-items: center;
+
+            span { margin-left: 5px; }
         }
         
         .title-languages { 
