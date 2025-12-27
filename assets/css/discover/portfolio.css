@@ -11,22 +11,42 @@
         width: 99.5%;
         height: calc(100% - 20px);
         padding: 20px 0 20px 0;
-
+    }
+    
+    section:not(#introduction) {
         h2 {
             background-color: #894EFF;
             font-weight: 500;
-            font-size: 2vmax;
+            font-size: 3vmin;
             border: 5px solid #312F32;
             border-bottom: none;
-            padding: 15px;
+            padding: 10px 20px 10px 20px;
             width: fit-content;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
         }
 
+        
         .content {
             width: 100%;
-            height: calc(100% - 94px);
+            height: calc(100% - 80px);
             border: 5px solid #303030;
             background-color: #535456;
+            position: relative;
+        }
+
+        .content::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 20px;
+            background-color: #894EFF;
+            border: 5px solid #303030;
+            border-bottom: none;
+            top: -30px;
+            left: -5px;
+            z-index: 1;
         }
     }
 

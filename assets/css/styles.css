@@ -48,8 +48,6 @@ footer {
             height: 100%;
         }
     }
-
-    p:last-child { padding: 10px; }
 }
 
 a { text-decoration: none; }
