@@ -39,7 +39,7 @@
     button .bevel {
         display: flex;
         align-items: center;
-        padding: 15px;
+        padding: 2.5%;
         border-top: 5px solid #E8E8E8;
         border-left: 5px solid #E8E8E8;
         border-right: 5px solid #737373;

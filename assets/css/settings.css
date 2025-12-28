@@ -15,13 +15,13 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        height: 75px;
+        height: fit-content;
         background-color: #D7D7D7;
         margin-bottom: auto;
         
         span {
             color: #575757;
-            font-size: 2vmax;
+            font-size: 4.5vmin;
         }
         
         .title-section { 
@@ -41,9 +41,9 @@
             border: none;
             background-color: transparent;
             cursor: pointer;
-            font-size: 2.5vmax;
+            font-size: 5vmin;
             color: #575757;
-            width: 75px;
+            width: 9.767%;
             aspect-ratio: 1 / 1;
             display: grid;
             place-content: center;
@@ -57,7 +57,7 @@
 
     .content {
         width: 100%;
-        height: calc(100% - 85px);
+        height: calc(100% - 7.5%);
         display: flex;
         justify-content: space-between;
 
@@ -74,13 +74,13 @@
 
         button {
             width: 100%;
-            text-align: start;
             cursor: pointer;
-            font-size: 2.5vmax;
+            font-size: 5vmin;
             border: 5px solid #272727;
             background-color: #D7D7D7;
-            span { color: #575757; }
             margin-bottom: 20px;
+
+            span { color: #575757; }
         }
 
         .selected { 
@@ -103,9 +103,9 @@
         border-left: 3px solid #0E0E0E;
 
         div {
-            font-size: 2.5vmax;
+            font-size: 5vmin;
             display: flex;
-            height: 75px;
+            height: 7.5%;
             align-items: center;
             padding-left: 5px;
         }
@@ -118,7 +118,7 @@
             height: 75%;
             aspect-ratio: 1 / 1;
             border: 5px solid #000002;
-            margin-right: 15px;
+            margin-right: 1.5%;
             background-color: #646265;
             display: flex;
             justify-content: center;
@@ -127,10 +127,11 @@
         div input[type="radio"]::before {
             content: "";
             width: 100%;
+            aspect-ratio: 1 / 1;
         }
 
         div input[type="radio"]:checked::before {
-            padding: 7.5px;
+            padding: 12.5%;
             background-color: #D5D5D5;
             background-clip: content-box;
         }

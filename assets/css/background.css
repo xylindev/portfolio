@@ -1,5 +1,5 @@
 [alt="panoramic-bg"] {
-    height: 100%;
+    height: 100vh;
     filter: blur(3px);
     animation: panorama 60s ease-in alternate infinite;
 }
