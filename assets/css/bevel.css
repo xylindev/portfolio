@@ -70,7 +70,9 @@
 
 #networks {
     .visual .bevel {
-        padding: 10px;
+        padding: 1.5%;
+        display: flex;
+        align-items: center;
         border-top: 5px solid #666769;
         border-left: 5px solid #616264;
         border-right: 5px solid #404143;

@@ -57,7 +57,7 @@
 
     .content {
         width: 100%;
-        height: calc(100% - 7.5%);
+        height: 92.5%;
         display: flex;
         justify-content: space-between;
 
