@@ -131,7 +131,7 @@
         }
 
         div input[type="radio"]:checked::before {
-            padding: 12.5%;
+            padding: 15%;
             background-color: #D5D5D5;
             background-clip: content-box;
         }
