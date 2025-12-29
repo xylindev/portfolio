@@ -1,10 +1,11 @@
-[alt="panoramic-bg"] {
-    height: 100vh;
-    filter: blur(3px);
-    animation: panorama 60s ease-in alternate infinite;
+body {
+    background-image: url(../img/background/panoramic.webp);
+    background-size: cover;
+    backdrop-filter: blur(3px);
+    animation: panorama 60s linear alternate infinite;
 }
 
 @keyframes panorama {
-    from { transform: translateX(0%); }
-    to { transform: translateX(-45%); }
+    from { background-position: 0 0; }
+    to { background-position: 100% 100%; }
 }
