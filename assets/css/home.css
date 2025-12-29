@@ -10,16 +10,16 @@
     z-index: 1;
 
     img { 
-        margin-bottom: 2.5%; 
-        width: 47.5%;
+        margin-bottom: 5%; 
+        width: 50%;
     }
 
     .splash-text {
         text-shadow: 4px 4px #4E4E0D;
-        font-size: 3.5vmin;
-        position: relative;
-        top: -10%;
-        left: 25%;
+        font-size: 5vmin;
+        position: absolute;
+        top: 28%;
+        left: 62.5%;
         animation: scales 1s alternate infinite;
 
         span { color: #FFFF00; }
@@ -30,13 +30,13 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 30%;
+        width: 32.5%;
 
         button {
             width: 100%;
-            margin-bottom: 10px;
+            margin-bottom: 2%;
             cursor: pointer;
-            font-size: 5vmin;
+            font-size: 6vmin;
             background-color: #D7D7D7;
             border: 5px solid #262626;
         }
