@@ -8,6 +8,11 @@
     src: url('../font/Minecraftia.otf');
 }
 
+@font-face {
+    font-family: 'Minecrafter';
+    src: url('../font/Minecrafter.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
