@@ -1,23 +1,18 @@
 @font-face {
-    font-family: Silkscreen;
-    src: url(../font/Silkscreen.ttf);
+    font-family: 'VT323';
+    src: url('../font/VT323.ttf');
 }
 
 @font-face {
-    font-family: VT323;
-    src: url(../font/VT323.ttf);
-}
-
-@font-face {
-    font-family: Poppins;
-    src: url(../font/Poppins.ttf);
+    font-family: 'Minecraftia';
+    src: url('../font/Minecraftia.otf');
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: VT323;
+    font-family: Minecraftia;
     color: #EBEBEB;
 }
 
@@ -37,7 +32,7 @@ footer {
     p {
         margin-top: auto;
         background-color: rgb(45, 48, 45, 0.9);
-        font-size: 3vmin;
+        font-size: 2.5vmin;
         display: flex;
         align-items: center;
         padding: 10px;
