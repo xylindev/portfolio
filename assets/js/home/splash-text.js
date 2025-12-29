@@ -2,18 +2,16 @@ export const reloadParagraph = () => {
     const frParagraph = document.querySelector('.splash-text .fr')
     const enParagraph = document.querySelector('.splash-text .en')
 
-    const lengthTables = 3
+    const lengthTables = 2
 
     const frSplashTxts = [
         'Développeur Web Full Stack',
-        'Étudiant à l\'IUT de Lille',
-        'Recrutez-moi'
+        'Étudiant à l\'IUT de Lille'
     ]
 
     const enSplashTxts = [
         'Full-stack Web Developer',
-        'Student at the IUT of Lille',
-        'Hire me'
+        'Student at the IUT of Lille'
     ]
 
     const chosenIdx = Math.round(Math.random() * lengthTables)
