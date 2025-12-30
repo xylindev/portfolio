@@ -92,7 +92,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        padding: 2%;
         border-top: 5px solid #7B7B7B;
         border-left: 5px solid #7C7C7E;
         border-right: 5px solid #666769;
@@ -100,6 +100,7 @@
     }
 
     .selected button .bevel {
+        position: relative;
         border-top: 5px solid #656668;
         border-left: 5px solid #7C7C7E;
         border-right: 5px solid #656766;
@@ -108,10 +109,10 @@
 
     .selected button .bevel::after {
         content: "";
-        border-bottom: 5px solid #E9EBEA;
-        width: 5%;
         position: absolute;
-        top: 85px;
+        width: 10vmin;
+        top: 100%;
+        border-bottom: 5px solid #E9EBEA;
     }
 
     a:not(.selected) button:hover .bevel {
