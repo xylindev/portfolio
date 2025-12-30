@@ -44,14 +44,14 @@ export const changeNavSelectedByScroll = () => {
         (
             !eventIsClick && 
             idx < (navItems.length-1) && 
-            nextSectionTop < (bodyHeigth/2)
+            nextSectionTop < bodyHeigth
         ) idx++
 
         if
         (
             !eventIsClick && 
             idx > 0 && 
-            previousSectionBottom > (bodyHeigth/2)
+            previousSectionBottom > bodyHeigth
         ) idx--
 
         previousSection = (idx-1 >= 0) ? portfolioSection[idx-1] : portfolioSection[0]
