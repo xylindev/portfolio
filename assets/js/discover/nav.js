@@ -18,12 +18,24 @@ function createNavItemsMap() {
 
 export const changeNavSelectedByClick = () => {
     for(const [navItem, index] of navItemsMap) {
-        navItem.addEventListener('click', () => {
+        navItem.addEventListener('click', (e) => {
+            e.preventDefault();
+
             navItem.classList.toggle(selected)
             navItemSelected.classList.toggle(selected)
             navItemSelected = navItem
             idx = index
             eventIsClick = true
+
+            const targetId = navItem.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            const portfolio = document.querySelector('#portfolio');
+
+            if (targetSection && portfolio) {
+                portfolio.scrollTo({
+                    top: targetSection.offsetTop,
+                });
+            }
         })
     }
 }
