@@ -13,8 +13,8 @@
         .container {
             width: 40%;
             height: 100%;
-            border-left: 5px solid #2E2F34;
-            border-top: 5px solid #2E2F34;
+            border-left: .5vmin solid #2E2F34;
+            border-top: .5vmin solid #2E2F34;
         }
 
         .container header, .container .content { width: 100%; }
@@ -24,10 +24,10 @@
             position: relative;
 
             background-color: #535456;
-            border-top: 5px solid #7C7C7C;
-            border-left: 5px solid #7B7B7D;
-            border-bottom: 5px solid #666769;
-            border-right: 5px solid #666769;
+            border-top: .5vmin solid #7C7C7C;
+            border-left: .5vmin solid #7B7B7D;
+            border-bottom: .5vmin solid #666769;
+            border-right: .5vmin solid #666769;
 
             .title { 
                 font-size: 5vmin;
@@ -63,12 +63,12 @@
             padding: 2.5%;
         }
 
-        .container .content a:first-child .visual { border-top: 5px solid #313133; }
+        .container .content a:first-child .visual { border-top: .5vmin solid #313133; }
 
         .container .content .visual {
             width: 100%;
             height: 17.5%;
-            border: 5px solid #313133;
+            border: .5vmin solid #313133;
             border-top: none;
             background-color: #535456;
 
@@ -77,7 +77,7 @@
                 margin-right: 3%;
                 aspect-ratio: 1 / 1;
                 filter: grayscale(1);
-                border: 5px solid #303030;
+                border: .5vmin solid #303030;
             }
 
             .description {

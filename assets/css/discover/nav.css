@@ -19,12 +19,12 @@
                 display: inline-block;
                 width: 16.5%;
                 height: 100%;
-                border-top: 5px solid #303030;
-                border-bottom: 5px solid #303030;
-                border-right: 5px solid #303030;
+                border-top: .5vmin solid #303030;
+                border-bottom: .5vmin solid #303030;
+                border-right: .5vmin solid #303030;
             }
             
-            a:first-of-type { border-left: 5px solid #303030; }
+            a:first-of-type { border-left: .5vmin solid #303030; }
 
             li { height: 100%; }
             
@@ -33,7 +33,7 @@
                 width: 100%;
                 border: none;
                 background-color: #535456;
-                border-bottom: 7.5px solid #3F4042;
+                border-bottom: .75vmin solid #3F4042;
                 cursor: pointer;
                 
                 span { font-size: 4vmin; }

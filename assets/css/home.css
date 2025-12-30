@@ -15,7 +15,7 @@
     }
 
     .splash-text {
-        text-shadow: 4px 4px #4E4E0D;
+        text-shadow: .4vmin .4vmin #4E4E0D;
         font-size: 5vmin;
         position: relative;
         top: -10%;
@@ -38,7 +38,7 @@
             cursor: pointer;
             font-size: 6vmin;
             background-color: #D7D7D7;
-            border: 5px solid #262626;
+            border: .5vmin solid #262626;
         }
         
         button span { color: #575757; }

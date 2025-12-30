@@ -10,7 +10,7 @@
     section {
         width: 99.5%;
         height: 100%;
-        padding: 20px 0 20px 0;
+        padding: 20px 0;
     }
     
     section:not(#introduction) {
@@ -18,19 +18,19 @@
             background-color: #894EFF;
             font-weight: 500;
             font-size: 3.5vmin;
-            border: 5px solid #312F32;
+            border: .5vmin solid #312F32;
             border-bottom: none;
             width: fit-content;
             padding: .5vmin 1vmin;
             position: relative;
             z-index: 2;
-            margin-bottom: -5px;
+            margin-bottom: -0.5vmin;
         }
 
         .content {
             width: 100%;
             height: calc(100% - 5vmin);
-            border: 5px solid #312F32;
+            border: .5vmin solid #312F32;
             background-color: #535456;
             position: relative;
             z-index: 1;
@@ -40,7 +40,7 @@
         .content::before {
             content: "";
             width: 100%;
-            border-top: 5px solid #312F32;
+            border-top: .5vmin solid #312F32;
             position: absolute;
             top: 1.5vmin;
         }

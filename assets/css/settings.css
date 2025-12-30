@@ -61,20 +61,20 @@
 
         nav, .language {
             background-color: #3F4041;
-            border-top: 5px solid #0E0E0E;
+            border-top: .5vmin solid #0E0E0E;
             padding: .5%;
         }
     }
 
     .content nav {
         width: 30%;
-        border-right: 5px solid #0E0E0E;
+        border-right: .5vmin solid #0E0E0E;
 
         button {
             width: 100%;
             cursor: pointer;
             font-size: 5vmin;
-            border: 5px solid #272727;
+            border: .5vmin solid #272727;
             background-color: #D7D7D7;
             margin-bottom: 3.5%;
 
@@ -98,7 +98,7 @@
 
     .content .language {
         width: 69.5%;
-        border-left: 5px solid #0E0E0E;
+        border-left: .5vmin solid #0E0E0E;
 
         div {
             font-size: 6vmin;
@@ -115,7 +115,7 @@
             appearance: none;
             height: 75%;
             aspect-ratio: 1 / 1;
-            border: 5px solid #000002;
+            border: .5vmin solid #000002;
             margin-right: 1.5%;
             background-color: #646265;
             display: flex;
