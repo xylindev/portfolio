@@ -1,6 +1,9 @@
 #portfolio #introduction {
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
+
+    .content { height: 100%; }
 
     .dl-resume {
         border: .5vmin solid #2F3130;
@@ -27,7 +30,7 @@
 
     .dl-resume:hover { background-color: #6D33E0; }
 
-    .content {
+    .presentation {
         width: 100%;
         height: 75%;
         background-color: #14163C;

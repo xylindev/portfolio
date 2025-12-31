@@ -1,0 +1,17 @@
+#portfolio #about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .content .my-life {
+        padding: 1%;
+        p {
+            text-align: justify;
+            font-family: Poppins;
+            font-size: 2vmin;
+            margin-bottom: 1%;
+        }
+    }
+}
+
