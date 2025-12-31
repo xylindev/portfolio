@@ -1,7 +1,6 @@
 #portfolio #introduction {
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
 
     .content { height: 100%; }
 
@@ -40,6 +39,7 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: row-reverse;
+        padding: 0 1.5%;
 
         .img {
             width: 25%;
@@ -57,7 +57,6 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
-            padding-left: 1%;
 
             .name {
                 font-size: 12vmin;

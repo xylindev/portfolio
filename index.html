@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="assets/css/discover/portfolio/introduction.css">
     <link rel="stylesheet" href="assets/css/discover/portfolio/about.css">
     <link rel="stylesheet" href="assets/css/discover/portfolio/educations.css">
+    <link rel="stylesheet" href="assets/css/discover/portfolio/contact.css">
     <link rel="stylesheet" href="assets/css/bevel.css">
     <!-- Preload Fonts -->
     <link rel="preload" href="assets/font/Poppins.ttf" as="font" type="font/ttf" crossorigin>
@@ -33,7 +34,7 @@
 <body>
     <main>
         <section id="home">
-            <img src="assets/img/home/title.webp" alt="title">
+            <img src="assets/img/home/title.webp" alt="title" title="Title generate on Blockbench">
             <p class="splash-text">
                 <span class="fr"></span>
                 <span class="en hidden"></span>
@@ -289,8 +290,8 @@
                 <section id="educations">
                     <div class="content">
                         <h2>
-                            <span class="fr">Formations</span>
-                            <span class="en hidden">Educations</span>
+                            <span class="fr">Parcours académiques</span>
+                            <span class="en hidden">Academic pathway</span>
                         </h2>
 
                         <div class="history">
@@ -340,7 +341,52 @@
 
                 <section id="contact">
                     <div class="content">
-                        
+                        <h2>
+                            <span class="fr">Discutons !</span>
+                            <span class="en hidden">Let's chat!</span>
+                        </h2>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="c752291b-2544-46a7-aca2-de6d3781d332">
+                            <div class="input-name">
+                                <label for="ipt-name">
+                                    <span class="fr">Votre nom</span>
+                                    <span class="en hidden">Your name</span>
+                                </label>
+                                <input type="text" name="name" id="ipt-name" placeholder="John Doe" required>
+                            </div>
+
+                            <div class="input-email">
+                                <label for="ipt-email">
+                                    <span class="fr">Votre adresse e-mail</span>
+                                    <span class="en hidden">Your email address</span>
+                                </label>
+                                <input type="email" name="email" id="ipt-email" placeholder="email@exemple.com" required>
+                            </div>
+
+                            <div class="textarea-msg">
+                                <label for="message">
+                                    <span class="fr">Votre message</span>
+                                    <span class="en hidden">Your message</span>
+                                </label>
+                                <textarea name="message" id="message" placeholder="Message..." required></textarea>
+                            </div>
+
+                            <div class="btns">
+                                <button type="reset">
+                                    <div class="bevel">
+                                        <span class="fr">Réinitialiser le formulaire</span>
+                                        <span class="en hidden">Reset the form</span>
+                                    </div>
+                                </button>
+    
+                                <button type="submit">
+                                    <div class="bevel">
+                                        <span class="fr">Envoyer</span>
+                                        <span class="en hidden">Send</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </section>
             </section>

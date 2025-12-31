@@ -10,6 +10,7 @@
     section {
         width: 99.5%;
         height: 100%;
+        padding: 20px 0;
     }
     
     section:not(#introduction) {

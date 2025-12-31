@@ -42,28 +42,32 @@ export const changeNavSelectedByClick = () => {
 
 export const changeNavSelectedByScroll = () => {
     const portfolio = document.querySelector('#portfolio')
-    const portfolioSection = document.querySelectorAll('#portfolio > section')
-    const bodyHeigth = document.body.getBoundingClientRect().height
+    const portfolioSection = document.querySelectorAll('#portfolio > section .content')
+    const body = document.body
+    const nav = document.querySelector('#discover > nav')
 
     let previousSection = portfolioSection[idx]
     let nextSection = portfolioSection[idx+1]
 
     portfolio.addEventListener('scroll', () => {
-        let previousSectionBottom = previousSection.getBoundingClientRect().bottom
         let nextSectionTop = nextSection.getBoundingClientRect().top
+        let previousSectionTop = previousSection.getBoundingClientRect().top
+
+        const bodyHeigth = body.getBoundingClientRect().height
+        const navBottom = nav.getBoundingClientRect().bottom
 
         if
         (
             !eventIsClick && 
             idx < (navItems.length-1) && 
-            nextSectionTop < bodyHeigth
+            nextSectionTop < bodyHeigth 
         ) idx++
 
         if
         (
             !eventIsClick && 
             idx > 0 && 
-            previousSectionBottom > bodyHeigth
+            previousSectionTop > navBottom
         ) idx--
 
         previousSection = (idx-1 >= 0) ? portfolioSection[idx-1] : portfolioSection[0]
