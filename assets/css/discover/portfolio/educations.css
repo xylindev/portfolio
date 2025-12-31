@@ -1,0 +1,32 @@
+#portfolio #educations {
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .line { 
+            width: 10%;
+            border-top: .5vmin #2F3032;
+        }
+
+        .dashed { border-top-style: dashed; }
+        .solid { border-top-style: solid; }
+
+        .degree { 
+            width: 32.5%;
+            background-color: #535456;
+            border: .5vmin solid #2F3032;
+            
+            h3, p, span { text-align: center; }
+
+            h3 {
+                font-family: Minecrafter;
+                font-weight: 500;
+                font-size: 4vmin;
+                margin-bottom: 4%;
+            }
+
+            p, span { font-size: 3vmin; }
+        }
+    }
+}

@@ -142,3 +142,13 @@
         border-bottom-color: #AD4AFF;
     }
 }
+
+#portfolio #educations {
+    .content .bevel {
+        border-top: .5vmin solid #7A7B7D;
+        border-left: .5vmin solid #7A7A7A;
+        border-right: .5vmin solid #666868;
+        border-bottom: .5vmin solid #666769;
+        padding: 3%;
+    }
+}
