@@ -1,7 +1,7 @@
 #discover {
     nav {
         width: 100%;
-        height: clamp(75px, 8vmin, 100px);
+        height: clamp(50px, 8vmin, 100px);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -33,7 +33,7 @@
                 width: 100%;
                 border: none;
                 background-color: #535456;
-                border-bottom: .75vmin solid #3F4042;
+                border-bottom: 1vmin solid #3F4042;
                 cursor: pointer;
                 
                 span { font-size: 4vmin; }

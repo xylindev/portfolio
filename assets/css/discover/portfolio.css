@@ -1,9 +1,9 @@
 #portfolio {
     width: 99%;
-    height: clamp(calc(90vmin - 75px), 82vmin, calc(90vmin - 100px));
+    height: clamp(calc(88vmin - 50px), 80vmin, calc(88vmin - 100px));
     left: .5%;
     position: absolute;
-    top: clamp(calc(10vmin + 75px), 18vmin, calc(10vmin + 100px));
+    top: clamp(calc(10vmin + 50px), 18vmin, calc(10vmin + 100px));
     overflow-x: hidden;
     overflow-y: scroll;
     
