@@ -4,13 +4,32 @@
     align-items: center;
     flex-direction: column;
 
-    .content .my-life {
-        padding: 1%;
-        p {
-            text-align: justify;
-            font-family: Poppins;
-            font-size: 2vmin;
-            margin-bottom: 1%;
+    .i-am {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .description {
+            width: 65%;
+            padding: 3% 5%;
+
+            h3 {
+                font-weight: 500;
+                margin-bottom: 2%;
+
+                span {
+                    font-family: Minecrafter;
+                    font-size: 3vmin;
+                    text-align: justify;
+                }
+            }
+
+            p {
+                font-size: 2vmin;
+                text-align: justify;
+                margin-bottom: 2%;
+                font-family: Poppins;
+            }
         }
     }
 }
