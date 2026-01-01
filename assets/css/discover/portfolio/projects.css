@@ -1,0 +1,171 @@
+#discover #projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content { 
+        background-color: transparent !important;
+        border: none !important;
+    }
+    
+    .content .works {
+        margin: .25% 0;
+        height: 65vmin;
+        display: flex;
+        justify-content: space-between;
+
+        nav {
+            width: 30%;
+            height: 100%;
+            border: .5vmin solid #000002;
+            background-color: rgb(17, 22, 18, 0.9);
+
+            h3 {
+                font-weight: 500;
+                padding: 2% 4%;
+                border-bottom: .25vmin solid #303030;
+
+                span { font-size: 3vmin; }
+            }
+
+            button {
+                background-color: transparent;
+                border: none;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                margin-bottom: .5%;
+                padding: 2% 4%;
+
+                img { 
+                    border: .5vmin solid #313131; 
+                    width: 8vmin;
+                    height: 8vmin;
+                    background-color: #725143;
+                }
+
+                .txt {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-left: 3%;
+
+                    p.name { font-size: 3.5vmin;}
+                    p.category span { font-size: 3vmin;}
+                }
+            }
+
+            button:first-of-type { margin-top: 1%; }
+
+            .selected { cursor: default; }
+
+            .selected, button:hover {
+                background-color: #535456;
+                border-top: .25vmin solid #393B3A;
+                border-bottom: .25vmin solid #67686A;
+            }
+        }
+
+        .projects-card {
+            width: 69.75%;
+            height: 100%;
+            border: .5vmin solid #322E2B;
+            
+            section {
+                width: 100%;
+                height: 100%;
+                background-color: #3F4042;
+                overflow-y: scroll;
+
+                .banner { width: 100%; }
+
+                .top, > div { 
+                    border-top: .5vmin solid #55514E;
+                    border-bottom: .5vmin solid #2F3032;
+                    padding: 1% 2.5%; 
+                }
+
+                div:last-of-type { border-bottom: none; }
+                
+                .top { 
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                    p.name { font-size: 3.5vmin; }
+
+                    .github-link {
+                        background-color: #45962F;
+                        border: .5vmin solid #323031;
+                        width: 40%;
+
+                        a {
+                            display: inline-block;
+                            width: 100%;
+                            height: 100%;
+                            border-bottom: 1vmin solid #2A5C1F;
+
+                            span {
+                                display: inline-block;
+                                width: 100%;
+                                height: 100%;
+                                font-size: 3vmin;
+                                font-family: Minecrafter;
+                                text-shadow: .4vmin .4vmin #306D20;
+                                padding: 3%;
+                                border-left: .5vmin solid #6FB05C;
+                                border-top: .5vmin solid #6EB25B;
+                                border-bottom: .5vmin solid #5BA244;
+                                border-right: .5vmin solid #5BA244;
+                            }
+                        }
+                    }
+
+                    .github-link:hover {
+                        background-color: #317222;
+
+                        span {
+                            text-shadow: .4vmin .4vmin #295321;
+                            border-left-color: #90B788;
+                            border-top-color: #90B788;
+                            border-bottom-color: #75A76A;
+                            border-right-color: #74A768;
+                        }
+                    }
+                }
+
+                > div {
+                    h3 {
+                        font-weight: 500;
+                        font-size: 3.5vmin;
+                        margin-bottom: .5%;
+                    }
+                }
+
+                .description p span { 
+                    font-size: 2.5vmin; 
+                    color: #C0C1C3;
+                }
+
+                .tech img { width: 7.5vmin; }
+            }
+
+            section::-webkit-scrollbar {
+                width: 12px;
+            }
+
+            section::-webkit-scrollbar-track-piece {
+                border: 3.6px solid transparent;
+                box-shadow: inset 7.2px 7.2px #646464;
+            }
+
+            section::-webkit-scrollbar-thumb {
+                border: 2.4px solid black;
+                background-color: #E1E5E8;
+                box-shadow: inset 0 -4.8px #646464;
+                cursor: grab;
+            }
+        }
+    }
+}
