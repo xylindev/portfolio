@@ -21,6 +21,8 @@
     color: #EBEBEB;
 }
 
+p, span { text-align: justify; }
+
 body, main { 
     overflow: hidden; 
     height: 100vh;

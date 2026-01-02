@@ -1,0 +1,75 @@
+#portfolio #skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content { 
+        background-color: transparent !important;
+        border: none !important;
+    }
+
+    .content .competence {
+        height: 65vmin;
+        padding: .5% 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+
+        .hard-skills, .soft-skills {
+            width: 49.5%;
+            height: 100%;
+            border: .5vmin solid #302E39;
+            background-color: #14163C;
+            
+
+            [alt="title"] { 
+                width: 80%; 
+                margin-bottom: 5%;
+            }
+
+            .hard-skills-item, .soft-skills-item {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                margin-bottom: 1%;
+
+                .list-style {
+                    width: 2vmin;
+                    aspect-ratio: 1 / 1;
+                    background-color: #FE9EF8;
+                    border: .5vmin solid #631B6D;
+                    margin: 0 5%;
+                }
+
+                p, h3 { font-size: 5vmin; }
+            }
+        }
+
+        .hard-skills .hard-skills-item {
+            flex-direction: column;
+
+            .title {
+                width: 100%;
+                display: flex;
+                align-items: center;
+
+                h3 { font-weight: 500; }
+            }
+
+            a {
+                display: inline-block;
+                width: 90%;
+                border: .5vmin solid #303030;
+                background-color: #894EFF;
+                text-align: center;
+                margin: 2% 0;
+
+                img { 
+                    width: 6vmin; 
+                    margin-left: 1%;
+                }
+            }
+        }
+    }
+}

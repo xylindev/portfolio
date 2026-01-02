@@ -153,6 +153,55 @@
     }
 }
 
+#portfolio #skills {
+    .content .bevel { 
+        padding: 2%; 
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .content .hard-skills > .bevel {
+        overflow-y: scroll;
+        border-top: .5vmin solid #6650A5;
+        border-left: .5vmin solid #645598;
+        border-right: .5vmin solid #6650A2;
+        border-bottom: .5vmin solid #61539E;
+
+        a .bevel {
+            justify-content: center;
+            flex-direction: row;
+            border-top: .5vmin solid #BE6EFF;
+            border-left: .5vmin solid #C26FFD;
+            border-right: .5vmin solid #A851FF;
+            border-bottom: .5vmin solid #A357F2;
+        }
+    }
+
+    .content .soft-skills > .bevel {
+        border-top: .5vmin solid #8F378D;
+        border-left: .5vmin solid #893988;
+        border-right: .5vmin solid #843D89;
+        border-bottom: .5vmin solid #8C388D;
+    }
+
+    .content .hard-skills > .bevel::-webkit-scrollbar {
+                width: 12px;
+            }
+
+    .content .hard-skills > .bevel::-webkit-scrollbar-track-piece {
+        border: 3.6px solid transparent;
+        box-shadow: inset 7.2px 7.2px #646464;
+    }
+
+    .content .hard-skills > .bevel::-webkit-scrollbar-thumb {
+        border: 2.4px solid black;
+        background-color: #E1E5E8;
+        box-shadow: inset 0 -4.8px #646464;
+        cursor: grab;
+    }
+}
+
 #portfolio #contact {
     .content [type="reset"] .bevel {
         border-bottom: 1vmin solid #646466;
