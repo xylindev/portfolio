@@ -58,7 +58,7 @@ li { list-style: none; }
 .hidden { display: none !important; }
 
 @media screen and (max-width : 1200px) {
-    main { display: none; }
+    main, footer { display: none; }
 
     body::before {
         content: "Bientôt disponible sur petit écran !";
