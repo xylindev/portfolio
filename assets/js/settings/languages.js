@@ -21,7 +21,7 @@ export const languagesToggle = () => {
     enInput.addEventListener('click', () => {
         let language = localStorage.getItem('language')
 
-        if(language === 'fr')
+        if(language === 'fr' || language === null)
             elements.forEach(element => {
                 element.classList.toggle('hidden')
             })
