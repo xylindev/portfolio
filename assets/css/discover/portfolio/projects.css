@@ -149,7 +149,10 @@
                     color: #C0C1C3;
                 }
 
-                .tech img { width: 7.5vmin; }
+                .tech img { 
+                    width: 7.5vmin; 
+                    margin-right: 1%;
+                }
             }
 
             section::-webkit-scrollbar {

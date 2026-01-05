@@ -1,6 +1,6 @@
 const discoverSection = document.querySelector('#discover')
 const homeSection = document.querySelector('#home')
-const footer = document.querySelector('footer')
+const homeFooter = document.querySelector('.home-footer')
 
 export const openDiscover = () => {
     const discoverButton = document.querySelector('.discover-btn')
@@ -8,7 +8,7 @@ export const openDiscover = () => {
     discoverButton.addEventListener('click', () => {
         discoverSection.classList.toggle('hidden')
         homeSection.classList.toggle('hidden')
-        footer.classList.toggle('hidden')
+        homeFooter.classList.toggle('hidden')
     })
 }
 
@@ -18,6 +18,6 @@ export const closeDiscover = () => {
     back.addEventListener('click', () => {
         discoverSection.classList.toggle('hidden')
         homeSection.classList.toggle('hidden')
-        footer.classList.toggle('hidden')
+        homeFooter.classList.toggle('hidden')
     })
 }
